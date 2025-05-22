@@ -107,7 +107,7 @@ const HomePage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* Para Homens */}
               <Link to="/category/men" className="group">
-                <div className="bg-black-900 rounded-xl p-8 border border-black-700 hover:border-blue-500 transition-all duration-300 hover:shadow-xl hover:transform hover:scale-105">
+                <div className="bg-black-900 rounded-xl p-8 border border-black-700 hover:border-blue-500 transition-all duration-300 hover:shadow-xl hover:transform hover:scale-105 flex flex-col h-full">
                   <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
                     <img
                       src="https://img.icons8.com/color/48/muscle-flexing-skin-type-3.png"
@@ -136,7 +136,7 @@ const HomePage = () => {
 
               {/* Para Mulheres */}
               <Link to="/category/women" className="group">
-                <div className="bg-black-900 rounded-xl p-8 border border-black-700 hover:border-pink-500 transition-all duration-300 hover:shadow-xl hover:transform hover:scale-105">
+                <div className="bg-black-900 rounded-xl p-8 border border-black-700 hover:border-pink-500 transition-all duration-300 hover:shadow-xl hover:transform hover:scale-105 flex flex-col h-full">
                   <div className="w-16 h-16 bg-pink-600 rounded-full flex items-center justify-center mx-auto mb-6">
                     <img
                       src="https://img.icons8.com/external-justicon-flat-justicon/64/external-weightlift-fitness-gym-justicon-flat-justicon.png"
@@ -165,7 +165,7 @@ const HomePage = () => {
 
               {/* Injetáveis */}
               <Link to="/category/injectable" className="group">
-                <div className="bg-black-900 rounded-xl p-8 border border-black-700 hover:border-green-500 transition-all duration-300 hover:shadow-xl hover:transform hover:scale-105">
+                <div className="bg-black-900 rounded-xl p-8 border border-black-700 hover:border-green-500 transition-all duration-300 hover:shadow-xl hover:transform hover:scale-105 flex flex-col h-full">
                   <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
                     <img
                       src="https://img.icons8.com/bubbles/100/injection.png"
@@ -194,7 +194,7 @@ const HomePage = () => {
 
               {/* Comprimidos */}
               <Link to="/category/oral" className="group">
-                <div className="bg-black-900 rounded-xl p-8 border border-black-700 hover:border-purple-500 transition-all duration-300 hover:shadow-xl hover:transform hover:scale-105">
+                <div className="bg-black-900 rounded-xl p-1 border border-black-700 hover:border-purple-500 transition-all duration-300 hover:shadow-xl hover:transform hover:scale-105 flex flex-col h-full w-full justify-evenly">
                   <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
                     <img
                       src="https://img.icons8.com/dusk/64/pills.png"
@@ -203,7 +203,7 @@ const HomePage = () => {
                       loading="lazy"
                     />
                   </div>
-                  <h3 className="text-fluid-h3 font-bold mb-4 text-center text-purple-400">
+                  <h3 className="text-fluid-h3 font-bold mb-4 text-center text-purple-400 w-full break-words ml-[-2]">
                     Comprimidos
                   </h3>
                   <p className="text-black-300 text-center leading-relaxed mb-4">

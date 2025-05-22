@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #0a0d0d;
+    --foreground: #f6f6f6;
+    --card: #181818;
+    --card-foreground: #f6f6f6;
+    --popover: #181818;
+    --popover-foreground: #f6f6f6;
+    --primary: #f6f6f6;
+    --primary-foreground: #0a0d0d;
+    --secondary: #3d3d3d;
+    --secondary-foreground: #f6f6f6;
+    --muted: #888888;
+    --muted-foreground: #b0b0b0;
+    --accent: #6d6d6d;
+    --accent-foreground: #f6f6f6;
+    --destructive: #e53935;
+    --destructive-foreground: #f6f6f6;
+    --border: #3d3d3d;
+    --input: #3d3d3d;
+    --ring: #f6f6f6;
+    --highlight: #e63946;
+    --highlight-foreground: #f6f6f6;
+    --radius: 0.5rem;
+  }
+}
+
+@layer components {
+  .product-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6;
+  }
+
+  .category-tabs {
+    @apply flex flex-wrap gap-2 border-b border-black-700 mb-6 overflow-x-auto;
+  }
+
+  .category-tab {
+    @apply px-4 py-2 whitespace-nowrap transition-colors rounded-t-lg;
+  }
+
+  .category-tab.active {
+    @apply bg-black-900 text-black-100 font-medium;
+  }
+
+  .category-tab:hover:not(.active) {
+    @apply bg-black-700;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-accent transition-colors;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-black-700 transition-colors;
+  }
+
+  .btn-destructive {
+    @apply bg-destructive text-destructive-foreground hover:bg-red-700 transition-colors;
+  }
+
+  .card {
+    @apply bg-card text-card-foreground border border-black-700 rounded-lg;
+  }
+
+  .input {
+    @apply bg-input text-foreground border border-black-700 focus:ring-2 focus:ring-ring rounded-md;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-black-100;
+  }
+}

@@ -1,8 +1,7 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
-import { useToast } from "@/components/ui/use-toast";
 import BaseLayout from "@/components/BaseLayout";
 import FormInput from "@/components/ui/form-input";
 import { useFormValidation } from "@/hooks/useFormValidation";
@@ -10,7 +9,6 @@ import { Helmet } from "react-helmet-async";
 import Stepper, { Step } from "@/components/Stepper";
 
 const LoginPage = () => {
-  const { toast } = useToast();
   const [isLoading, setIsLoading] = useState(false);
   const [loginData, setLoginData] = useState({
     email: "",
@@ -78,10 +76,6 @@ const LoginPage = () => {
       // Simulate API call
       setTimeout(() => {
         setIsLoading(false);
-        toast({
-          title: "Login realizado com sucesso",
-          description: "Bem-vindo de volta!",
-        });
         // Redirect or update UI
         window.location.href = "/";
       }, 1500);
@@ -97,10 +91,6 @@ const LoginPage = () => {
       // Simulate API call
       setTimeout(() => {
         setIsLoading(false);
-        toast({
-          title: "Conta criada com sucesso",
-          description: "Seu cadastro foi realizado",
-        });
         // Redirect or update UI
         window.location.href = "/";
       }, 1500);

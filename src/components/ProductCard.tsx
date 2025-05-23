@@ -3,7 +3,7 @@ import { Product } from "@/types/product";
 import { useShoppingCart } from "@/context/ShoppingCartContext";
 import { ShoppingCart } from "lucide-react";
 import { Link, LinkProps } from "react-router-dom";
-import React from "react";
+import React, { useState } from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils"; // assuming cn is a helper for clsx/tailwind-merge
 
@@ -38,6 +38,7 @@ const ProductCard = React.memo(
     ...props // className is now part of props due to AnchorHTMLAttributes
   }: ProductCardProps) => {
     const { addItem } = useShoppingCart();
+    const [quantity, setQuantity] = useState(1);
 
     // Determine border variant - for now, just using default and hover built into base classes
     // In a more complex scenario, you might pass a variant prop and use it here:
@@ -98,17 +99,40 @@ const ProductCard = React.memo(
               .toFixed(2)
               .replace(".", ",")}
           </div>
-          <div className="flex items-center justify-between">
+          <div className="mt-auto flex items-center gap-2">
             <Button
               onClick={(e) => {
                 e.preventDefault();
-                addItem(product);
+                // Implementar lógica de adicionar ao carrinho aqui
+                addItem(product, quantity); // Passa o produto e a quantidade explicitamente
               }}
-              className="flex-1 bg-black-900 hover:bg-black-800 text-highlight-foreground"
+              className="w-7/10 bg-black-900 hover:bg-black-800 text-highlight-foreground"
             >
               <ShoppingCart className="mr-2 h-4 w-4" aria-hidden="true" />
               Comprar
             </Button>
+            <div className="w-3/10 flex items-center justify-between bg-gray-700 rounded-md">
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  setQuantity((prev) => Math.max(1, prev - 1)); // Garante que a quantidade mínima é 1
+                }}
+                className="flex-1 p-2 text-white hover:bg-gray-600 rounded-l-md disabled:opacity-50 disabled:cursor-not-allowed"
+                disabled={quantity === 1}
+              >
+                -
+              </button>
+              <span className="text-white font-semibold px-2">{quantity}</span>
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  setQuantity((prev) => prev + 1);
+                }}
+                className="flex-1 p-2 text-white hover:bg-gray-600 rounded-r-md"
+              >
+                +
+              </button>
+            </div>
           </div>
         </div>
       </Link>

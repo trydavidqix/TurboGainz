@@ -1,15 +1,13 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/components/ui/use-toast";
 import { Mail, Phone, MapPin } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const ContactPage = () => {
-  const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -31,11 +29,11 @@ const ContactPage = () => {
 
     // Basic validation
     if (!formData.name || !formData.email || !formData.message) {
-      toast({
-        title: "Campos obrigatórios",
-        description: "Por favor, preencha todos os campos obrigatórios",
-        variant: "destructive",
-      });
+      // toast({
+      //   title: "Campos obrigatórios",
+      //   description: "Por favor, preencha todos os campos obrigatórios",
+      //   variant: "destructive",
+      // });
       return;
     }
 
@@ -44,10 +42,10 @@ const ContactPage = () => {
     // Simulate API call
     setTimeout(() => {
       setIsSubmitting(false);
-      toast({
-        title: "Mensagem enviada com sucesso",
-        description: "Agradecemos seu contato. Responderemos em breve!",
-      });
+      // toast({
+      //   title: "Mensagem enviada com sucesso",
+      //   description: "Agradecemos seu contato. Responderemos em breve!",
+      // });
 
       // Reset form
       setFormData({

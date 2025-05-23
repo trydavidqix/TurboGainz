@@ -1,6 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 import { Product } from "@/types/product";
-import { useToast } from "@/components/ui/use-toast";
 
 interface CartItem {
   product: Product;
@@ -29,7 +28,6 @@ export const ShoppingCartProvider = ({
 }) => {
   const [items, setItems] = useState<CartItem[]>([]);
   const [isLoaded, setIsLoaded] = useState(false);
-  const { toast } = useToast();
 
   // Load cart from localStorage on component mount
   useEffect(() => {
@@ -67,19 +65,9 @@ export const ShoppingCartProvider = ({
         const updatedItems = [...prevItems];
         updatedItems[existingItemIndex].quantity += quantity;
 
-        toast({
-          title: "Quantidade atualizada",
-          description: `${product.name} (${updatedItems[existingItemIndex].quantity}x)`,
-        });
-
         return updatedItems;
       } else {
         // Otherwise add new item
-        toast({
-          title: "Produto adicionado",
-          description: `${product.name} adicionado ao carrinho`,
-        });
-
         return [...prevItems, { product, quantity }];
       }
     });
@@ -92,13 +80,10 @@ export const ShoppingCartProvider = ({
       );
 
       if (itemToRemove) {
-        toast({
-          title: "Produto removido",
-          description: `${itemToRemove.product.name} removido do carrinho`,
-        });
+        return prevItems.filter((item) => item.product.id !== productId);
       }
 
-      return prevItems.filter((item) => item.product.id !== productId);
+      return prevItems;
     });
   };
 
@@ -117,10 +102,6 @@ export const ShoppingCartProvider = ({
 
   const clearCart = () => {
     setItems([]);
-    toast({
-      title: "Carrinho esvaziado",
-      description: "Todos os produtos foram removidos",
-    });
   };
 
   const itemCount = items.reduce((total, item) => total + item.quantity, 0);

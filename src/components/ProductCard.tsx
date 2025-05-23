@@ -6,6 +6,7 @@ import { Link, LinkProps } from "react-router-dom";
 import React, { useState } from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils"; // assuming cn is a helper for clsx/tailwind-merge
+import Counter from "./Counter";
 
 const productCardVariants = cva(
   "bg-[#0A0D0D] max-w-sm w-full rounded-lg shadow-md border flex flex-col h-full overflow-hidden transition-shadow duration-300 group",
@@ -122,7 +123,15 @@ const ProductCard = React.memo(
               >
                 -
               </button>
-              <span className="text-white font-semibold px-2">{quantity}</span>
+              <Counter
+                value={quantity}
+                fontSize={18}
+                padding={2}
+                gap={0}
+                places={[10, 1]}
+                textColor="white"
+                fontWeight={600}
+              />
               <button
                 onClick={(e) => {
                   e.preventDefault();

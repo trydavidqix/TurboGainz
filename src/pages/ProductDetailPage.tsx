@@ -9,6 +9,7 @@ import { ShoppingCart, ArrowLeft, Minus, Plus } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
+import Counter from "@/components/Counter";
 
 const ProductDetailPage = () => {
   const { productId } = useParams<{ productId: string }>();
@@ -227,35 +228,48 @@ const ProductDetailPage = () => {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 mb-8">
-                <div className="flex items-center border rounded-md">
-                  <Button
-                    variant="ghost"
-                    size="icon"
+              <div className="flex items-center gap-4 mb-8 w-full">
+                {/* Container para o Contador e botões +/- */}
+                <div className="flex items-center justify-between bg-[#3d3d3d] rounded-md w-1/2">
+                  <button
                     onClick={decrementQuantity}
                     disabled={quantity <= 1}
-                    className="h-10 w-10"
+                    className="p-2 text-white hover:bg-gray-600 rounded-l-md disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    <Minus className="h-4 w-4" />
-                  </Button>
-                  <span className="w-12 text-center">{quantity}</span>
-                  <Button
-                    variant="ghost"
-                    size="icon"
+                    -
+                  </button>
+                  {/* Substitui o span pelo componente Counter */}
+                  <Counter
+                    value={quantity}
+                    fontSize={18}
+                    padding={2}
+                    gap={0}
+                    places={[10, 1]}
+                    textColor="white"
+                    fontWeight={600}
+                    containerStyle={{
+                      width: "auto",
+                      display: "flex",
+                      justifyContent: "center",
+                    }}
+                    digitStyle={{ width: "1ch" }}
+                  />
+                  <button
                     onClick={incrementQuantity}
-                    className="h-10 w-10"
+                    className="p-2 text-white hover:bg-gray-600 rounded-r-md"
                   >
-                    <Plus className="h-4 w-4" />
-                  </Button>
+                    +
+                  </button>
                 </div>
 
                 <Button
-                  className="bg-black-900 hover:bg-black-800 text-highlight-foreground"
+                  size="lg"
                   onClick={handleAddToCart}
-                  disabled={product.stock <= 0}
+                  disabled={product.stock === 0}
+                  className="flex-grow bg-black-900 hover:bg-black-800 text-highlight-foreground w-1/2"
                 >
-                  <ShoppingCart className="mr-2 h-5 w-5" />
-                  Adicionar ao Carrinho
+                  <ShoppingCart className="mr-2 h-5 w-5" aria-hidden="true" />
+                  Adicionar ao carrinho
                 </Button>
               </div>
 

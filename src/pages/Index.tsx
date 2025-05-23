@@ -9,6 +9,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PromoCarousel from "@/components/PromoCarousel";
 import { Helmet } from "react-helmet-async";
+import RotatingText from "@/components/RotatingText";
 
 const HomePage = () => {
   const [activeCategory, setActiveCategory] = useState<string>("all");
@@ -67,7 +68,24 @@ const HomePage = () => {
             <div className="md:w-1/2 text-center md:text-left">
               <h1 className="text-fluid-h1 font-bold mb-4 text-black-50">
                 Potencialize seus{" "}
-                <span className="text-[#4A0B0B]">Resultados</span>
+                <RotatingText
+                  texts={[
+                    "Resultados",
+                    "Ganhos",
+                    "Ciclos",
+                    "Shape",
+                    "Modo monstro",
+                  ]}
+                  mainClassName="text-[#4A0B0B]"
+                  staggerFrom="last"
+                  initial={{ y: "100%" }}
+                  animate={{ y: 0 }}
+                  exit={{ y: "-120%" }}
+                  staggerDuration={0.025}
+                  splitLevelClassName="overflow-hidden"
+                  transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                  rotationInterval={2000}
+                />
               </h1>
               <p className="text-fluid-lg mb-8 text-black-200 max-w-md mx-auto md:mx-0">
                 Produtos de alta qualidade para performance e resultados

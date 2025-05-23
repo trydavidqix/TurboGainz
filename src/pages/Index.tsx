@@ -247,25 +247,25 @@ const HomePage = () => {
                     </TabsTrigger>
                     <TabsTrigger
                       value="men"
-                      className="data-[state=active]:bg-highlight data-[state=active]:text-highlight transition-colors duration-300 hover:bg-blue-800 hover:h-full"
+                      className="data-[state=active]:bg-highlight data-[state=active]:text-highlight transition-colors duration-300  hover:h-full"
                     >
                       Homens
                     </TabsTrigger>
                     <TabsTrigger
                       value="women"
-                      className="data-[state=active]:bg-highlight data-[state=active]:text-highlight transition-colors duration-300 hover:bg-pink-800 hover:h-full"
+                      className="data-[state=active]:bg-highlight data-[state=active]:text-highlight transition-colors duration-300  hover:h-full"
                     >
                       Mulheres
                     </TabsTrigger>
                     <TabsTrigger
                       value="injectable"
-                      className="data-[state=active]:bg-highlight data-[state=active]:text-highlight transition-colors duration-300 hover:bg-green-800 hover:h-full"
+                      className="data-[state=active]:bg-highlight data-[state=active]:text-highlight transition-colors duration-300  hover:h-full"
                     >
                       Injetáveis
                     </TabsTrigger>
                     <TabsTrigger
                       value="oral"
-                      className="data-[state=active]:bg-highlight data-[state=active]:text-highlight transition-colors duration-300 hover:bg-purple-800 hover:h-full"
+                      className="data-[state=active]:bg-highlight data-[state=active]:text-highlight transition-colors duration-300  hover:h-full"
                     >
                       Comprimidos
                     </TabsTrigger>

@@ -170,7 +170,7 @@ const HomePage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* Para Homens */}
               <Link to="/category/men" className="group">
-                <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#0A0D0D] flex flex-col h-full">
+                <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#262626] flex flex-col h-full">
                   <img
                     src="/icons/icons8-muscle-flexing-skin-type-3-96.png"
                     alt="Ícone de Músculo para Homens"
@@ -197,7 +197,7 @@ const HomePage = () => {
 
               {/* Para Mulheres */}
               <Link to="/category/women" className="group">
-                <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#0A0D0D] flex flex-col h-full">
+                <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#262626] flex flex-col h-full">
                   <img
                     src="/icons/icons8-weightlift-64.png"
                     alt="Ícone de Halter para Mulheres"
@@ -224,7 +224,7 @@ const HomePage = () => {
 
               {/* Injetáveis */}
               <Link to="/category/injectable" className="group">
-                <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#0A0D0D] flex flex-col h-full">
+                <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#262626] flex flex-col h-full">
                   <img
                     src="/icons/icons8-injection-64.png"
                     alt="Ícone de Seringa para Injetáveis"
@@ -251,7 +251,7 @@ const HomePage = () => {
 
               {/* Comprimidos */}
               <Link to="/category/oral" className="group">
-                <div className="bg-black-900 rounded-xl p-1 border border-black-700 transition-all duration-300 hover:bg-[#0A0D0D] flex flex-col h-full w-full justify-evenly">
+                <div className="bg-black-900 rounded-xl p-1 border border-black-700 transition-all duration-300 hover:bg-[#262626] flex flex-col h-full w-full justify-evenly">
                   <img
                     src="/icons/icons8-pills-50.png"
                     alt="Ícone de Pílulas para Comprimidos"
@@ -387,22 +387,11 @@ const HomePage = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Card 1 - Produtos de Qualidade */}
               <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#0A0D0D]">
-                <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <svg
-                    className="w-8 h-8 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                    />
-                  </svg>
-                </div>
+                <img
+                  src="/icons/badge.png"
+                  alt="Ícone de Badge"
+                  className="w-16 h-16 object-contain mx-auto mb-6"
+                />
                 <h3 className="text-xl font-bold mb-4 text-center text-[#f6f6f6]">
                   Produtos de Qualidade
                 </h3>
@@ -414,22 +403,11 @@ const HomePage = () => {
 
               {/* Card 2 - Entrega Rápida */}
               <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#0A0D0D]">
-                <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <svg
-                    className="w-8 h-8 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                </div>
+                <img
+                  src="/icons/fast-delivery.png"
+                  alt="Ícone de Entrega Rápida"
+                  className="w-16 h-16 object-contain mx-auto mb-6"
+                />
                 <h3 className="text-xl font-bold mb-4 text-center text-[#f6f6f6]">
                   Entrega Rápida
                 </h3>
@@ -441,22 +419,11 @@ const HomePage = () => {
 
               {/* Card 3 - Suporte Especializado */}
               <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#0A0D0D]">
-                <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <svg
-                    className="w-8 h-8 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
-                    />
-                  </svg>
-                </div>
+                <img
+                  src="/icons/message.png"
+                  alt="Ícone de Suporte Especializado"
+                  className="w-16 h-16 object-contain mx-auto mb-6"
+                />
                 <h3 className="text-xl font-bold mb-4 text-center text-[#f6f6f6]">
                   Suporte Especializado
                 </h3>

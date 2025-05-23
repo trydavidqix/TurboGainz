@@ -100,14 +100,14 @@ const HomePage = () => {
         {/* Categories Section - Updated to match Benefits style */}
         <section className="py-fluid-32 bg-[#0A0D0D] text-black-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-fluid-h2 font-bold mb-12 text-center">
+            <h2 className="text-fluid-h2 font-bold mb-12 text-center text-[#f6f6f6]">
               Categorias
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* Para Homens */}
               <Link to="/category/men" className="group">
-                <div className="bg-black-900 rounded-xl p-8 border border-black-700 hover:border-blue-500 transition-all duration-300 hover:shadow-xl hover:transform hover:scale-105 flex flex-col h-full">
+                <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#0A0D0D] flex flex-col h-full">
                   <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
                     <img
                       src="https://img.icons8.com/color/48/muscle-flexing-skin-type-3.png"
@@ -116,14 +116,14 @@ const HomePage = () => {
                       loading="lazy"
                     />
                   </div>
-                  <h3 className="text-fluid-h3 font-bold mb-4 text-center text-blue-400">
+                  <h3 className="text-fluid-h3 font-bold mb-4 text-center text-[#f6f6f6]">
                     Para Homens
                   </h3>
-                  <p className="text-black-300 text-center leading-relaxed mb-4">
+                  <p className="text-[#f6f6f6] text-center leading-relaxed mb-4">
                     Produtos específicos para o público masculino
                   </p>
                   <div className="flex justify-center">
-                    <span className="text-blue-400 inline-flex items-center group-hover:underline">
+                    <span className="text-[#f6f6f6] inline-flex items-center group-hover:underline">
                       Ver produtos
                       <ChevronRight
                         className="ml-1 h-4 w-4"
@@ -136,7 +136,7 @@ const HomePage = () => {
 
               {/* Para Mulheres */}
               <Link to="/category/women" className="group">
-                <div className="bg-black-900 rounded-xl p-8 border border-black-700 hover:border-pink-500 transition-all duration-300 hover:shadow-xl hover:transform hover:scale-105 flex flex-col h-full">
+                <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#0A0D0D] flex flex-col h-full">
                   <div className="w-16 h-16 bg-pink-600 rounded-full flex items-center justify-center mx-auto mb-6">
                     <img
                       src="https://img.icons8.com/external-justicon-flat-justicon/64/external-weightlift-fitness-gym-justicon-flat-justicon.png"
@@ -145,14 +145,14 @@ const HomePage = () => {
                       loading="lazy"
                     />
                   </div>
-                  <h3 className="text-fluid-h3 font-bold mb-4 text-center text-pink-400">
+                  <h3 className="text-fluid-h3 font-bold mb-4 text-center text-[#f6f6f6]">
                     Para Mulheres
                   </h3>
-                  <p className="text-black-300 text-center leading-relaxed mb-4">
+                  <p className="text-[#f6f6f6] text-center leading-relaxed mb-4">
                     Produtos específicos para o público feminino
                   </p>
                   <div className="flex justify-center">
-                    <span className="text-pink-400 inline-flex items-center group-hover:underline">
+                    <span className="text-[#f6f6f6] inline-flex items-center group-hover:underline">
                       Ver produtos
                       <ChevronRight
                         className="ml-1 h-4 w-4"
@@ -165,7 +165,7 @@ const HomePage = () => {
 
               {/* Injetáveis */}
               <Link to="/category/injectable" className="group">
-                <div className="bg-black-900 rounded-xl p-8 border border-black-700 hover:border-green-500 transition-all duration-300 hover:shadow-xl hover:transform hover:scale-105 flex flex-col h-full">
+                <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#0A0D0D] flex flex-col h-full">
                   <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
                     <img
                       src="https://img.icons8.com/bubbles/100/injection.png"
@@ -174,14 +174,14 @@ const HomePage = () => {
                       loading="lazy"
                     />
                   </div>
-                  <h3 className="text-fluid-h3 font-bold mb-4 text-center text-green-400">
+                  <h3 className="text-fluid-h3 font-bold mb-4 text-center text-[#f6f6f6]">
                     Injetáveis
                   </h3>
-                  <p className="text-black-300 text-center leading-relaxed mb-4">
+                  <p className="text-[#f6f6f6] text-center leading-relaxed mb-4">
                     Hormônios e suplementos injetáveis
                   </p>
                   <div className="flex justify-center">
-                    <span className="text-green-400 inline-flex items-center group-hover:underline">
+                    <span className="text-[#f6f6f6] inline-flex items-center group-hover:underline">
                       Ver produtos
                       <ChevronRight
                         className="ml-1 h-4 w-4"
@@ -194,7 +194,7 @@ const HomePage = () => {
 
               {/* Comprimidos */}
               <Link to="/category/oral" className="group">
-                <div className="bg-black-900 rounded-xl p-1 border border-black-700 hover:border-purple-500 transition-all duration-300 hover:shadow-xl hover:transform hover:scale-105 flex flex-col h-full w-full justify-evenly">
+                <div className="bg-black-900 rounded-xl p-1 border border-black-700 transition-all duration-300 hover:bg-[#0A0D0D] flex flex-col h-full w-full justify-evenly">
                   <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
                     <img
                       src="https://img.icons8.com/dusk/64/pills.png"
@@ -203,14 +203,14 @@ const HomePage = () => {
                       loading="lazy"
                     />
                   </div>
-                  <h3 className="text-fluid-h3 font-bold mb-4 text-center text-purple-400 w-full break-words ml-[-2]">
+                  <h3 className="text-fluid-h3 font-bold mb-4 text-center text-[#f6f6f6] w-full break-words ml-[-2]">
                     Comprimidos
                   </h3>
-                  <p className="text-black-300 text-center leading-relaxed mb-4">
+                  <p className="text-[#f6f6f6] text-center leading-relaxed mb-4">
                     Hormônios e suplementos em comprimidos
                   </p>
                   <div className="flex justify-center">
-                    <span className="text-purple-400 inline-flex items-center group-hover:underline">
+                    <span className="text-[#f6f6f6] inline-flex items-center group-hover:underline">
                       Ver produtos
                       <ChevronRight
                         className="ml-1 h-4 w-4"
@@ -331,7 +331,7 @@ const HomePage = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Card 1 - Produtos de Qualidade */}
-              <div className="bg-black-900 rounded-xl p-8 border border-black-700 hover:border-blue-500 transition-all duration-300 hover:shadow-xl hover:transform hover:scale-105">
+              <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#0A0D0D]">
                 <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
                   <svg
                     className="w-8 h-8 text-white"
@@ -348,17 +348,17 @@ const HomePage = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-center text-blue-400">
+                <h3 className="text-xl font-bold mb-4 text-center text-[#f6f6f6]">
                   Produtos de Qualidade
                 </h3>
-                <p className="text-black-300 text-center leading-relaxed">
+                <p className="text-[#f6f6f6] text-center leading-relaxed">
                   Todos os nossos produtos passam por rigoroso controle de
                   qualidade para garantir resultados.
                 </p>
               </div>
 
               {/* Card 2 - Entrega Rápida */}
-              <div className="bg-black-900 rounded-xl p-8 border border-black-700 hover:border-green-500 transition-all duration-300 hover:shadow-xl hover:transform hover:scale-105">
+              <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#0A0D0D]">
                 <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
                   <svg
                     className="w-8 h-8 text-white"
@@ -375,17 +375,17 @@ const HomePage = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-center text-green-400">
+                <h3 className="text-xl font-bold mb-4 text-center text-[#f6f6f6]">
                   Entrega Rápida
                 </h3>
-                <p className="text-black-300 text-center leading-relaxed">
+                <p className="text-[#f6f6f6] text-center leading-relaxed">
                   Enviamos seus pedidos em até 24h com embalagem discreta e
                   sistema de rastreamento.
                 </p>
               </div>
 
               {/* Card 3 - Suporte Especializado */}
-              <div className="bg-black-900 rounded-xl p-8 border border-black-700 hover:border-purple-500 transition-all duration-300 hover:shadow-xl hover:transform hover:scale-105">
+              <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#0A0D0D]">
                 <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
                   <svg
                     className="w-8 h-8 text-white"
@@ -402,10 +402,10 @@ const HomePage = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-center text-purple-400">
+                <h3 className="text-xl font-bold mb-4 text-center text-[#f6f6f6]">
                   Suporte Especializado
                 </h3>
-                <p className="text-black-300 text-center leading-relaxed">
+                <p className="text-[#f6f6f6] text-center leading-relaxed">
                   Nossa equipe está disponível para ajudar com dúvidas sobre
                   produtos e ciclos.
                 </p>

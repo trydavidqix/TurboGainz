@@ -52,7 +52,7 @@ const PromoCarousel = () => {
           key={image.src}
           src={image.src}
           alt={image.alt}
-          className={`w-full h-full object-contain transition-opacity duration-700 absolute top-0 left-0 ${
+          className={`w-full h-full object-contain transition-opacity duration-1000 absolute top-0 left-0 ${
             current === idx ? "opacity-100 z-10" : "opacity-0 z-0"
           }`}
           style={{ borderRadius: 16 }}
@@ -60,46 +60,6 @@ const PromoCarousel = () => {
           loading="lazy"
         />
       ))}
-
-      {/* Controles de navegação */}
-      <div className="absolute inset-y-0 left-0 flex items-center">
-        <Button
-          variant="ghost"
-          size="icon"
-          onClick={prevSlide}
-          className="h-12 w-12 rounded-full bg-black-800/50 hover:bg-black-800 text-white"
-          aria-label="Slide anterior"
-        >
-          <ChevronLeft className="h-6 w-6" aria-hidden="true" />
-        </Button>
-      </div>
-
-      <div className="absolute inset-y-0 right-0 flex items-center">
-        <Button
-          variant="ghost"
-          size="icon"
-          onClick={nextSlide}
-          className="h-12 w-12 rounded-full bg-black-800/50 hover:bg-black-800 text-white"
-          aria-label="Próximo slide"
-        >
-          <ChevronRight className="h-6 w-6" aria-hidden="true" />
-        </Button>
-      </div>
-
-      {/* Indicadores */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-        {promoImages.map((_, idx) => (
-          <button
-            key={idx}
-            onClick={() => setCurrent(idx)}
-            className={`w-2 h-2 rounded-full transition-colors ${
-              current === idx ? "bg-white" : "bg-white/50"
-            }`}
-            aria-label={`Ir para slide ${idx + 1}`}
-            aria-current={current === idx}
-          />
-        ))}
-      </div>
     </div>
   );
 };

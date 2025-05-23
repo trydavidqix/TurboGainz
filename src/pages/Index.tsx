@@ -67,7 +67,7 @@ const HomePage = () => {
             <div className="md:w-1/2 text-center md:text-left">
               <h1 className="text-fluid-h1 font-bold mb-4 text-black-50">
                 Potencialize seus{" "}
-                <span className="text-blue-400">Resultados</span>
+                <span className="text-[#4A0B0B]">Resultados</span>
               </h1>
               <p className="text-fluid-lg mb-8 text-black-200 max-w-md mx-auto md:mx-0">
                 Produtos de alta qualidade para performance e resultados

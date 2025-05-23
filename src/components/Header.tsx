@@ -50,7 +50,7 @@ const Header = () => {
     >
       <div className="flex justify-between items-center p-4 border-b">
         <Link to="/" className="text-xl font-bold text-white">
-          TurboGainz
+          Turbo<span style={{ color: "#4A0B0B" }}>Gainz</span>
         </Link>
         <Button
           variant="ghost"
@@ -246,7 +246,7 @@ const Header = () => {
 
           {/* Logo */}
           <Link to="/" className="text-xl font-bold text-white">
-            TurboGainz
+            Turbo<span style={{ color: "#4A0B0B" }}>Gainz</span>
           </Link>
 
           {/* Desktop navigation */}

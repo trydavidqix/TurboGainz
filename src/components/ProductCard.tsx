@@ -106,12 +106,12 @@ const ProductCard = React.memo(
                 // Implementar lógica de adicionar ao carrinho aqui
                 addItem(product, quantity); // Passa o produto e a quantidade explicitamente
               }}
-              className="w-7/10 bg-black-900 hover:bg-black-800 text-highlight-foreground"
+              className="flex-grow bg-black-900 hover:bg-black-800 text-highlight-foreground"
             >
               <ShoppingCart className="mr-2 h-4 w-4" aria-hidden="true" />
               Comprar
             </Button>
-            <div className="w-3/10 flex items-center justify-between bg-gray-700 rounded-md">
+            <div className="flex items-center justify-between bg-black-900 rounded-md">
               <button
                 onClick={(e) => {
                   e.preventDefault();

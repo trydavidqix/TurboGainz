@@ -69,10 +69,10 @@ const LoginPage = () => {
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-
+    
     if (validateLogin(loginData)) {
       setIsLoading(true);
-
+      
       // Simulate API call
       setTimeout(() => {
         setIsLoading(false);
@@ -84,10 +84,10 @@ const LoginPage = () => {
 
   const handleRegister = (e: React.FormEvent) => {
     e.preventDefault();
-
+    
     if (validateRegister(registerData)) {
       setIsLoading(true);
-
+      
       // Simulate API call
       setTimeout(() => {
         setIsLoading(false);
@@ -166,8 +166,8 @@ const LoginPage = () => {
                   placeholder="Sua senha"
                 />
 
-                <Button
-                  type="submit"
+                <Button 
+                  type="submit" 
                   className="w-full border border-highlight bg-transparent text-highlight font-semibold rounded-lg py-3 mt-4 text-lg shadow-sm hover:bg-black-800 hover:text-highlight-foreground transition-colors"
                   disabled={isLoading}
                 >
@@ -195,78 +195,78 @@ const LoginPage = () => {
               >
                 <Step>
                   <div className="space-y-4 p-6">
-                    <FormInput
-                      label="Nome"
-                      type="text"
-                      name="name"
-                      value={registerData.name}
-                      onChange={handleRegisterChange}
-                      error={registerErrors.name}
-                      required
-                      placeholder="Seu nome"
-                    />
+                <FormInput
+                  label="Nome"
+                  type="text"
+                  name="name"
+                  value={registerData.name}
+                  onChange={handleRegisterChange}
+                  error={registerErrors.name}
+                  required
+                  placeholder="Seu nome"
+                />
 
-                    <FormInput
-                      label="Email"
-                      type="email"
-                      name="email"
-                      value={registerData.email}
-                      onChange={handleRegisterChange}
-                      error={registerErrors.email}
-                      required
-                      placeholder="Seu email"
-                    />
+                <FormInput
+                  label="Email"
+                  type="email"
+                  name="email"
+                  value={registerData.email}
+                  onChange={handleRegisterChange}
+                  error={registerErrors.email}
+                  required
+                  placeholder="Seu email"
+                />
                   </div>
                 </Step>
                 <Step>
                   <div className="space-y-4 p-6">
-                    <FormInput
-                      label="Senha"
-                      type="password"
-                      name="password"
-                      value={registerData.password}
-                      onChange={handleRegisterChange}
-                      error={registerErrors.password}
-                      required
-                      placeholder="Sua senha"
-                    />
+                <FormInput
+                  label="Senha"
+                  type="password"
+                  name="password"
+                  value={registerData.password}
+                  onChange={handleRegisterChange}
+                  error={registerErrors.password}
+                  required
+                  placeholder="Sua senha"
+                />
 
-                    <FormInput
-                      label="Confirmar Senha"
-                      type="password"
-                      name="confirmPassword"
-                      value={registerData.confirmPassword}
-                      onChange={handleRegisterChange}
-                      error={registerErrors.confirmPassword}
-                      required
-                      placeholder="Confirmar senha"
-                    />
+                <FormInput
+                  label="Confirmar Senha"
+                  type="password"
+                  name="confirmPassword"
+                  value={registerData.confirmPassword}
+                  onChange={handleRegisterChange}
+                  error={registerErrors.confirmPassword}
+                  required
+                  placeholder="Confirmar senha"
+                />
 
-                    <div className="flex items-center">
+                <div className="flex items-center">
                       <input
                         type="checkbox"
                         id="terms"
                         className="w-4 h-4 mr-2"
                         required
                       />
-                      <label htmlFor="terms" className="text-xs text-black-100">
-                        Concordo com os{" "}
+                  <label htmlFor="terms" className="text-xs text-black-100">
+                    Concordo com os{" "}
                         <Link
                           to="/terms"
                           className="text-blue-600 hover:underline"
                         >
-                          Termos de Serviço
-                        </Link>{" "}
-                        e{" "}
+                      Termos de Serviço
+                    </Link>{" "}
+                    e{" "}
                         <Link
                           to="/privacy"
                           className="text-blue-600 hover:underline"
                         >
-                          Política de Privacidade
-                        </Link>
-                      </label>
+                      Política de Privacidade
+                    </Link>
+                  </label>
+                </div>
                     </div>
-                  </div>
                 </Step>
               </Stepper>
             </TabsContent>

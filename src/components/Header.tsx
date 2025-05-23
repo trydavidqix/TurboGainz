@@ -338,12 +338,12 @@ const Header = () => {
                               to="/products"
                             >
                               <img
-                                src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-steroids-addictions-flaticons-lineal-color-flat-icons.png"
+                                src="/icons/icons8-steroids-64.png"
                                 alt="Ícone de Esteroides para Produtos"
                                 className="w-12 h-12 mb-2"
                               />
                               <div className="text-lg font-bold text-black-50">
-                                Produtos
+                                Todos os Produtos
                               </div>
                             </Link>
                           </NavigationMenuLink>
@@ -358,9 +358,9 @@ const Header = () => {
                                 className="block select-none rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-black-800 hover:text-white text-black-100 flex items-center gap-2"
                               >
                                 <img
-                                  src="https://img.icons8.com/color/48/muscle-flexing-skin-type-3.png"
-                                  alt="Ícone de Músculo para Homens"
-                                  className="w-5 h-5"
+                                  src="/icons/icons8-muscle-flexing-skin-type-3-96.png"
+                                  alt="Ícone Para Homens"
+                                  className="w-5 h-5 mr-2"
                                 />
                                 <div className="text-base font-semibold">
                                   Homens
@@ -375,9 +375,9 @@ const Header = () => {
                                 className="block select-none rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-black-800 hover:text-white text-black-100 flex items-center gap-2"
                               >
                                 <img
-                                  src="https://img.icons8.com/external-justicon-flat-justicon/64/external-weightlift-fitness-gym-justicon-flat-justicon.png"
-                                  alt="Ícone de Halter para Mulheres"
-                                  className="w-5 h-5"
+                                  src="/icons/icons8-weightlift-64.png"
+                                  alt="Ícone Para Mulheres"
+                                  className="w-5 h-5 mr-2"
                                 />
                                 <div className="text-base font-semibold">
                                   Mulheres
@@ -392,9 +392,9 @@ const Header = () => {
                                 className="block select-none rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-black-800 hover:text-white text-black-100 flex items-center gap-2"
                               >
                                 <img
-                                  src="https://img.icons8.com/bubbles/100/injection.png"
-                                  alt="Ícone de Seringa para Injetáveis"
-                                  className="w-5 h-5"
+                                  src="/icons/icons8-injection-64.png"
+                                  alt="Ícone Injetáveis"
+                                  className="w-5 h-5 mr-2"
                                 />
                                 <div className="text-base font-semibold">
                                   Injetáveis
@@ -409,9 +409,9 @@ const Header = () => {
                                 className="block select-none rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-black-800 hover:text-white text-black-100 flex items-center gap-2"
                               >
                                 <img
-                                  src="https://img.icons8.com/dusk/64/pills.png"
-                                  alt="Ícone de Pílulas para Comprimidos"
-                                  className="w-5 h-5"
+                                  src="/icons/icons8-pills-50.png"
+                                  alt="Ícone Comprimidos"
+                                  className="w-5 h-5 mr-2"
                                 />
                                 <div className="text-base font-semibold">
                                   Comprimidos

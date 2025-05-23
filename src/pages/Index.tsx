@@ -58,6 +58,51 @@ const HomePage = () => {
         />
         {/* Substitua pela URL da imagem que você quer que apareça ao compartilhar no Twitter */}
         <meta name="twitter:image" content="[URL_DA_IMAGEM_PARA_TWITTER]" />
+        {/* Favicons */}
+        <link
+          rel="icon"
+          href="/favicon_io/icons8-muscle-office-l-16.png"
+          sizes="16x16"
+          type="image/png"
+        />
+        <link
+          rel="icon"
+          href="/favicon_io/icons8-muscle-office-l-32.png"
+          sizes="32x32"
+          type="image/png"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/favicon_io/icons8-muscle-office-l-57.png"
+          sizes="57x57"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/favicon_io/icons8-muscle-office-l-60.png"
+          sizes="60x60"
+        />
+        <link
+          rel="icon"
+          href="/favicon_io/icons8-muscle-office-l-70.png"
+          sizes="70x70"
+          type="image/png"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/favicon_io/icons8-muscle-office-l-72.png"
+          sizes="72x72"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/favicon_io/icons8-muscle-office-l-76.png"
+          sizes="76x76"
+        />
+        <link
+          rel="icon"
+          href="/favicon_io/icons8-muscle-office-l-96.png"
+          sizes="96x96"
+          type="image/png"
+        />
       </Helmet>
       <Header />
 
@@ -126,14 +171,12 @@ const HomePage = () => {
               {/* Para Homens */}
               <Link to="/category/men" className="group">
                 <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#0A0D0D] flex flex-col h-full">
-                  <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <img
-                      src="https://img.icons8.com/color/48/muscle-flexing-skin-type-3.png"
-                      alt="Ícone de Músculo para Homens"
-                      className="w-full h-full object-contain"
-                      loading="lazy"
-                    />
-                  </div>
+                  <img
+                    src="/icons/icons8-muscle-flexing-skin-type-3-96.png"
+                    alt="Ícone de Músculo para Homens"
+                    className="w-16 h-16 object-contain mx-auto mb-6"
+                    loading="lazy"
+                  />
                   <h3 className="text-fluid-h3 font-bold mb-4 text-center text-[#f6f6f6]">
                     Para Homens
                   </h3>
@@ -155,14 +198,12 @@ const HomePage = () => {
               {/* Para Mulheres */}
               <Link to="/category/women" className="group">
                 <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#0A0D0D] flex flex-col h-full">
-                  <div className="w-16 h-16 bg-pink-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <img
-                      src="https://img.icons8.com/external-justicon-flat-justicon/64/external-weightlift-fitness-gym-justicon-flat-justicon.png"
-                      alt="Ícone de Halter para Mulheres"
-                      className="w-full h-full object-contain"
-                      loading="lazy"
-                    />
-                  </div>
+                  <img
+                    src="/icons/icons8-weightlift-64.png"
+                    alt="Ícone de Halter para Mulheres"
+                    className="w-16 h-16 object-contain mx-auto mb-6"
+                    loading="lazy"
+                  />
                   <h3 className="text-fluid-h3 font-bold mb-4 text-center text-[#f6f6f6]">
                     Para Mulheres
                   </h3>
@@ -184,14 +225,12 @@ const HomePage = () => {
               {/* Injetáveis */}
               <Link to="/category/injectable" className="group">
                 <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#0A0D0D] flex flex-col h-full">
-                  <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <img
-                      src="https://img.icons8.com/bubbles/100/injection.png"
-                      alt="Ícone de Seringa para Injetáveis"
-                      className="w-full h-full object-contain"
-                      loading="lazy"
-                    />
-                  </div>
+                  <img
+                    src="/icons/icons8-injection-64.png"
+                    alt="Ícone de Seringa para Injetáveis"
+                    className="w-16 h-16 object-contain mx-auto mb-6"
+                    loading="lazy"
+                  />
                   <h3 className="text-fluid-h3 font-bold mb-4 text-center text-[#f6f6f6]">
                     Injetáveis
                   </h3>
@@ -213,14 +252,12 @@ const HomePage = () => {
               {/* Comprimidos */}
               <Link to="/category/oral" className="group">
                 <div className="bg-black-900 rounded-xl p-1 border border-black-700 transition-all duration-300 hover:bg-[#0A0D0D] flex flex-col h-full w-full justify-evenly">
-                  <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <img
-                      src="https://img.icons8.com/dusk/64/pills.png"
-                      alt="Ícone de Pílulas para Comprimidos"
-                      className="w-full h-full object-contain"
-                      loading="lazy"
-                    />
-                  </div>
+                  <img
+                    src="/icons/icons8-pills-50.png"
+                    alt="Ícone de Pílulas para Comprimidos"
+                    className="w-16 h-16 object-contain mx-auto mb-6"
+                    loading="lazy"
+                  />
                   <h3 className="text-fluid-h3 font-bold mb-4 text-center text-[#f6f6f6] w-full break-words ml-[-2]">
                     Comprimidos
                   </h3>

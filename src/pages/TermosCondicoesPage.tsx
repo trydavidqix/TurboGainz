@@ -1,9 +1,58 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Helmet } from "react-helmet-async";
 
 const TermosCondicoesPage = () => {
   return (
     <div className="page-container min-h-screen flex flex-col">
+      <Helmet>
+        <title>TurboGainz - Termos e Condições</title>
+        {/* Favicons */}
+        <link
+          rel="icon"
+          href="/favicon_io/icons8-muscle-office-l-16.png"
+          sizes="16x16"
+          type="image/png"
+        />
+        <link
+          rel="icon"
+          href="/favicon_io/icons8-muscle-office-l-32.png"
+          sizes="32x32"
+          type="image/png"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/favicon_io/icons8-muscle-office-l-57.png"
+          sizes="57x57"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/favicon_io/icons8-muscle-office-l-60.png"
+          sizes="60x60"
+        />
+        <link
+          rel="icon"
+          href="/favicon_io/icons8-muscle-office-l-70.png"
+          sizes="70x70"
+          type="image/png"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/favicon_io/icons8-muscle-office-l-72.png"
+          sizes="72x72"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/favicon_io/icons8-muscle-office-l-76.png"
+          sizes="76x76"
+        />
+        <link
+          rel="icon"
+          href="/favicon_io/icons8-muscle-office-l-96.png"
+          sizes="96x96"
+          type="image/png"
+        />
+      </Helmet>
       <Header />
       <main className="flex-1 bg-[#0A0D0D]">
         <section className="py-16 text-black-100">
@@ -13,10 +62,14 @@ const TermosCondicoesPage = () => {
               Leia atentamente nossos termos e condições de uso:
             </p>
             <ul className="list-disc pl-6 text-black-300 space-y-2">
-              <li>Ao comprar em nosso site, você concorda com nossas políticas.</li>
+              <li>
+                Ao comprar em nosso site, você concorda com nossas políticas.
+              </li>
               <li>Os produtos são destinados a maiores de 18 anos.</li>
               <li>Não nos responsabilizamos pelo uso indevido dos produtos.</li>
-              <li>Os preços e condições podem ser alterados sem aviso prévio.</li>
+              <li>
+                Os preços e condições podem ser alterados sem aviso prévio.
+              </li>
               <li>Em caso de dúvidas, entre em contato com nosso suporte.</li>
             </ul>
           </div>
@@ -27,4 +80,4 @@ const TermosCondicoesPage = () => {
   );
 };
 
-export default TermosCondicoesPage; 
+export default TermosCondicoesPage;

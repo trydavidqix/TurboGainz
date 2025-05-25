@@ -39,6 +39,10 @@ const ProductDetailPage = () => {
         .slice(0, 4);
 
       setRelatedProducts(related);
+    } else {
+      // Adicionar um log ou feedback visual se o produto não for encontrado
+      console.error(`Produto com id ${productId} não encontrado.`);
+      setProduct(null); // Garantir que o estado do produto é nulo
     }
 
     setLoading(false);
@@ -130,7 +134,7 @@ const ProductDetailPage = () => {
             <div className="bg-black-900 rounded-lg border border-black-700 shadow-sm flex items-center justify-center w-full max-w-[27rem] mx-auto h-100">
               {product && (
                 <img
-                  src={product.image}
+                  src={import.meta.env.BASE_URL + product.image}
                   alt={product.name}
                   className="w-full h-full object-cover rounded-lg"
                 />

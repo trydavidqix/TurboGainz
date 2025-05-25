@@ -1,37 +1,41 @@
-import { Product } from "@/types/product";
+import { Product, ProductCategory, ProductType } from "@/types/product";
 
 // Importações das imagens dos produtos
-import testoEnantatoImg from '/Products/Injetaveis/TestoEnantato.png';
-import testosteronaCipionatoImg from '/Products/Injetaveis/TestosteronaCipionato.png';
-import testosteronaPropionatoImg from '/Products/Injetaveis/TestosteronaPropionato.png';
-import sustanonImg from '/Products/Injetaveis/Sustanon.png';
-import decanoatoNandrolonaImg from '/Products/Injetaveis/DecanoatoNandrolona.png';
-import boldenonaImg from '/Products/Injetaveis/Boldenona.png';
-import trembolonaImg from '/Products/Injetaveis/Trembolona.png';
-import masteronImg from '/Products/Injetaveis/Masteron.png';
-import primobolanImg from '/Products/Injetaveis/Primobolan.png';
-import hcgImg from '/Products/Injetaveis/HCG.png';
-import ghImg from '/Products/Injetaveis/GH.png';
-import insulinaImg from '/Products/Injetaveis/Insulina.png';
+// Removendo imports de imagem, pois usaremos caminhos diretos
+// import testoEnantatoImg from '/public/Products/Injetaveis/TestoEnantato.png';
+// import testosteronaCipionatoImg from '/public/Products/Injetaveis/TestosteronaCipionato.png';
+// import testosteronaPropionatoImg from '/public/Products/Injetaveis/TestosteronaPropionato.png';
+// import sustanonImg from '/public/Products/Injetaveis/Sustanon.png';
+// import decanoatoNandrolonaImg from '/public/Products/Injetaveis/DecanoatoNandrolona.png';
+// import boldenonaImg from '/public/Products/Injetaveis/Boldenona.png';
+// import trembolonaImg from '/public/Products/Injetaveis/Trembolona.png';
+// import masteronImg from '/public/Products/Injetaveis/Masteron.png';
+// import primobolanImg from '/public/Products/Injetaveis/Primobolan.png';
+// import hcgImg from '/public/Products/Injetaveis/HCG.png';
+// import ghImg from '/public/Products/Injetaveis/GH.png';
+// import insulinaImg from '/public/Products/Injetaveis/Insulina.png';
 // Orais
-import oxandrolonaImg from '/Products/Comprimidos/Oxandrolona.png';
-import stanozololOralImg from '/Products/Comprimidos/Stanozolol.png';
-import dianabolImg from '/Products/Comprimidos/Dianabol.png';
-import turinabolImg from '/Products/Comprimidos/Turinabol.png';
-import halotestinImg from '/Products/Comprimidos/Halotestin.png';
-import provironImg from '/Products/Comprimidos/Proviron.png';
-import clomidImg from '/Products/Comprimidos/Clomid.png';
-import inibidoresAromataseImg from '/Products/Comprimidos/InibidoresdeAromatase.png';
-import anticoncepcionalImg from '/Products/Comprimidos/Anticoncepcionais.png';
-import clenbuterolImg from '/Products/Comprimidos/Clenbuterol.png';
-import t3Img from '/Products/Comprimidos/T3.png';
-import t4Img from '/Products/Comprimidos/T4.png';
-import tamoxifenoImg from '/Products/Comprimidos/Tamoxifeno.png';
-import xenicalImg from '/Products/Comprimidos/Xenical.png';
-import sarmsImg from '/Products/Comprimidos/Sarms.png';
-import dnpImg from '/Products/Comprimidos/DNP.png';
-import sibutraproImg from '/Products/Comprimidos/SibutraPro.png';
-const oxandrolonaWomenImg = oxandrolonaImg;
+// import oxandrolonaImg from '/public/Products/Comprimidos/Oxandrolona.png';
+// import stanozololOralImg from '/public/Products/Comprimidos/Stanozolol.png';
+// import dianabolImg from '/public/Products/Comprimidos/Dianabol.png';
+// import turinabolImg from '/public/Products/Comprimidos/Turinabol.png';
+// import halotestinImg from '/public/public/Products/Comprimidos/Halotestin.png';
+// import provironImg from '/public/Products/Comprimidos/Proviron.png';
+// import clomidImg from '/public/Products/Comprimidos/Clomid.png';
+// import inibidoresAromataseImg from '/public/Products/Comprimidos/InibidoresdeAromatase.png';
+// import anticoncepcionalImg from '/public/Products/Comprimidos/Anticoncepcionais.png';
+// import clenbuterolImg from '/public/Products/Comprimidos/Clenbuterol.png';
+// import t3Img from '/public/Products/Comprimidos/T3.png';
+// import t4Img from '/public/Products/Comprimidos/T4.png';
+// import tamoxifenoImg from '/public/Products/Comprimidos/Tamoxifeno.png';
+// import xenicalImg from '/public/Products/Comprimidos/Xenical.png';
+// import sarmsImg from '/public/Products/Comprimidos/Sarms.png';
+// import dnpImg from '/public/Products/Comprimidos/DNP.png';
+// import sibutraproImg from '/public/Products/Comprimidos/SibutraPro.png';
+// import nolvadexImg from '/public/Products/Comprimidos/Tamoxifeno.png';
+
+// Removendo variável que usava import
+// const oxandrolonaWomenImg = oxandrolonaImg;
 
 
 export const products: Product[] = [
@@ -42,9 +46,9 @@ export const products: Product[] = [
     shortDescription: "Éster de testosterona de liberação lenta.",
     description: "Éster de testosterona de liberação lenta ideal para ciclos de ganho de massa muscular e reposição hormonal.",
     price: 199.90,
-    image: testoEnantatoImg,
+    image: '/Products/Injetaveis/TestoEnantato.png',
     category: "injectable",
-    type: "testosterone",
+    type: "testosterone-enanthate",
     gender: ["men"],
     features: ["Liberação lenta", "Menos aplicações", "Alta potência"],
     usage: "250-500 mg/semana (dividida em 1-2 aplicações)",
@@ -64,9 +68,9 @@ export const products: Product[] = [
     shortDescription: "Similar ao Enantato, muito usado nos EUA.",
     description: "Forma de testosterona com liberação prolongada, similar ao Enantato mas com meia-vida ligeiramente maior.",
     price: 215.90,
-    image: testosteronaCipionatoImg,
+    image: '/Products/Injetaveis/TestosteronaCipionato.png',
     category: "injectable",
-    type: "testosterone",
+    type: "testosterone-cipionate",
     gender: ["men"],
     features: ["Alta biodisponibilidade", "Estabilidade hormonal", "Menos aplicações"],
     usage: "200-600 mg/semana (1-2 aplicações)",
@@ -85,9 +89,9 @@ export const products: Product[] = [
     shortDescription: "Liberação rápida (aplicações frequentes).",
     description: "Éster de testosterona de ação rápida, ideal para ajustes finos de dosagem e ciclos curtos.",
     price: 159.90,
-    image: testosteronaPropionatoImg,
+    image: '/Products/Injetaveis/TestosteronaPropionato.png',
     category: "injectable",
-    type: "testosterone",
+    type: "testosterone-propionate",
     gender: ["men"],
     features: ["Ação rápida", "Menos retenção", "Ajuste fino de dosagem"],
     usage: "50-100 mg/dia ou em dias alternados",
@@ -106,9 +110,9 @@ export const products: Product[] = [
     shortDescription: "Mistura de 4 ésteres de testosterona.",
     description: "Combinação de ésteres de testosterona com diferentes tempos de liberação para níveis hormonais mais estáveis.",
     price: 249.90,
-    image: sustanonImg,
+    image: '/Products/Injetaveis/Sustanon.png',
     category: "injectable",
-    type: "testosterone",
+    type: "sustanon",
     gender: ["men"],
     features: ["Liberação progressiva", "Níveis estáveis", "Versatilidade"],
     usage: "250-500 mg/semana ou a cada 3 semanas",
@@ -128,9 +132,9 @@ export const products: Product[] = [
     shortDescription: "Anabólico com efeito em colágeno e articulações.",
     description: "Esteroide anabólico com potentes efeitos na síntese de colágeno e proteção articular além do ganho muscular.",
     price: 299.90,
-    image: decanoatoNandrolonaImg,
+    image: '/Products/Injetaveis/DecanoatoNandrolona.png',
     category: "injectable",
-    type: "nandrolone",
+    type: "nandrolone-decanoate",
     gender: ["men", "women"], // Ambos, pois você indicou uso para mulheres também
     features: ["Proteção articular", "Ganho de massa", "Menos androgênico"],
     usage: "Homens: 200-600 mg/semana; Mulheres: 50-100 mg/semana",
@@ -150,7 +154,7 @@ export const products: Product[] = [
     shortDescription: "Anabólico com efeito vascular e crescimento seco.",
     description: "Esteroide anabólico derivado da testosterona que proporciona ganhos de massa magra com menor retenção hídrica.",
     price: 259.90,
-    image: boldenonaImg,
+    image: '/Products/Injetaveis/Boldenona.png',
     category: "injectable",
     type: "boldenone",
     gender: ["men", "women"], // Ambos, pois você indicou uso para mulheres também
@@ -171,7 +175,7 @@ export const products: Product[] = [
     shortDescription: "Um dos anabólicos mais potentes e agressivos.",
     description: "Esteroide anabólico potente que não aromatiza, proporcionando ganhos dramáticos de força e massa sem retenção de água.",
     price: 349.90,
-    image: trembolonaImg,
+    image: '/Products/Injetaveis/Trembolona.png',
     category: "injectable",
     type: "trembolone",
     gender: ["men"], // Não recomendado para mulheres na sua lista
@@ -193,7 +197,7 @@ export const products: Product[] = [
     shortDescription: "Anabólico seco para definição muscular.",
     description: "Esteroide com propriedades anti-estrogênicas que proporciona definição muscular e densidade sem retenção hídrica.",
     price: 279.90,
-    image: masteronImg,
+    image: '/Products/Injetaveis/Masteron.png',
     category: "injectable",
     type: "masteron",
     gender: ["men", "women"], // Ambos, mas com ressalvas para mulheres
@@ -214,7 +218,7 @@ export const products: Product[] = [
     shortDescription: "Anabólico leve, menos colaterais.",
     description: "Esteroide anabólico leve e seguro, popular entre atletas devido ao baixo risco de efeitos colaterais.",
     price: 399.90,
-    image: primobolanImg,
+    image: '/Products/Injetaveis/Primobolan.png',
     category: "injectable",
     type: "primobolan",
     gender: ["men", "women"], // Ambos
@@ -236,7 +240,7 @@ export const products: Product[] = [
     shortDescription: "Hormônio para manter função testicular.",
     description: "Hormônio que simula a ação do LH, prevenindo atrofia testicular durante ciclos de esteroides e auxiliando na recuperação pós-ciclo.",
     price: 189.90,
-    image: hcgImg,
+    image: '/Products/Injetaveis/HCG.png',
     category: "injectable",
     type: "hcg",
     gender: ["men", "women"], // Ambos
@@ -257,7 +261,7 @@ export const products: Product[] = [
     shortDescription: "Hormônio para crescimento muscular e queima de gordura.",
     description: "Hormônio peptídico que promove o crescimento celular, síntese proteica e metabolismo lipídico, proporcionando ganhos musculares e redução de gordura.",
     price: 1499.90,
-    image: ghImg,
+    image: '/Products/Injetaveis/GH.png',
     category: "injectable",
     type: "growth-hormone",
     gender: ["men", "women"], // Ambos
@@ -279,7 +283,7 @@ export const products: Product[] = [
     shortDescription: "Hormônio anabólico potente para usuários avançados.",
     description: "Hormônio que regula o metabolismo da glicose e promove efeitos anabólicos potentes quando usado adequadamente por atletas avançados.",
     price: 129.90,
-    image: insulinaImg,
+    image: '/Products/Injetaveis/Insulina.png',
     category: "injectable",
     type: "insulin",
     gender: ["men", "women"],
@@ -302,7 +306,7 @@ export const products: Product[] = [
     shortDescription: "Anabólico oral leve, ideal para cutting.",
     description: "Esteroide oral com baixa toxicidade hepática e poucos efeitos androgênicos, ótimo para ganho de força e definição.",
     price: 179.90,
-    image: oxandrolonaImg,
+    image: '/Products/Comprimidos/Oxandrolona.png',
     category: "oral",
     type: "oxandrolone",
     gender: ["men"],
@@ -324,7 +328,7 @@ export const products: Product[] = [
     shortDescription: "Anabólico oral para densidade e força.",
     description: "Derivado da Dihydrotestosterona, proporciona ganhos de massa magra e vascularização sem retenção hídrica.",
     price: 169.90,
-    image: stanozololOralImg,
+    image: '/Products/Comprimidos/Stanozolol.png',
     category: "oral",
     type: "stanozolol",
     gender: ["men"],
@@ -345,7 +349,7 @@ export const products: Product[] = [
     shortDescription: "Anabólico oral potente para ganho de massa.",
     description: "Um dos esteroides orais mais populares para ganho rápido de massa muscular e força.",
     price: 149.90,
-    image: dianabolImg,
+    image: '/Products/Comprimidos/Dianabol.png',
     category: "oral",
     type: "dianabol",
     gender: ["men"],
@@ -366,7 +370,7 @@ export const products: Product[] = [
     shortDescription: "Derivado do Dianabol, menos colaterais.",
     description: "Esteroide oral com estrutura similar ao Dianabol, mas com menos efeitos colaterais e ganhos mais secos.",
     price: 189.90,
-    image: turinabolImg,
+    image: '/Products/Comprimidos/Turinabol.png',
     category: "oral",
     type: "turinabol",
     gender: ["men", "women"], // Ambos
@@ -388,7 +392,7 @@ export const products: Product[] = [
     shortDescription: "Anabólico oral para força extrema.",
     description: "Um dos esteroides orais mais androgênicos e potentes para aumento de força e agressividade.",
     price: 329.90,
-    image: halotestinImg,
+    image: '/Products/Comprimidos/Halotestin.png',
     category: "oral",
     type: "halotestin",
     gender: ["men"], // Não recomendado para mulheres
@@ -409,7 +413,7 @@ export const products: Product[] = [
     shortDescription: "Anti-estrogênico e androgênico leve.",
     description: "Anabólico oral com propriedades anti-estrogênicas que ajuda a reduzir ginecomastia e aumentar a libido.",
     price: 139.90,
-    image: provironImg,
+    image: '/Products/Comprimidos/Proviron.png',
     category: "oral",
     type: "proviron",
     gender: ["men"], // Principalmente homens
@@ -430,7 +434,7 @@ export const products: Product[] = [
     shortDescription: "Modulador Seletivo de Receptor Estrogênico (SERM).",
     description: "Droga usada para estimular a produção de testosterona endógena após ciclos de esteroides.",
     price: 99.90,
-    image: clomidImg,
+    image: '/Products/Comprimidos/Clomid.png',
     category: "oral",
     type: "clomid",
     gender: ["men", "women"], // Ambos (TPC para homens, indução de ovulação para mulheres)
@@ -451,7 +455,7 @@ export const products: Product[] = [
     shortDescription: "Modulador Seletivo de Receptor Estrogênico (SERM).",
     description: "Droga usada para prevenir ou tratar ginecomastia e auxiliar na recuperação hormonal pós-ciclo.",
     price: 119.90,
-    image: nolvadexImg,
+    image: '/Products/Comprimidos/Tamoxifeno.png',
     category: "oral",
     type: "tamoxifen",
     gender: ["men", "women"], // Ambos
@@ -472,7 +476,7 @@ export const products: Product[] = [
     shortDescription: "Anastrozol e Letrozol para controle de estrogênio.",
     description: "Drogas que bloqueiam a enzima aromatase, reduzindo a conversão de testosterona em estrogênio.",
     price: 199.90,
-    image: inibidoresAromataseImg,
+    image: '/Products/Comprimidos/InibidoresdeAromatase.png',
     category: "oral",
     type: "aromatase-inhibitors",
     gender: ["men"], // Principalmente homens (uso médico para mulheres)
@@ -493,7 +497,7 @@ export const products: Product[] = [
     shortDescription: "Termogênico potente para queima de gordura.",
     description: "Agonista beta-2 que estimula o metabolismo e a termogênese, auxiliando na queima de gordura.",
     price: 159.90,
-    image: clenbuterolImg,
+    image: '/Products/Comprimidos/Clenbuterol.png',
     category: "oral",
     type: "clenbuterol",
     gender: ["men", "women"], // Ambos
@@ -515,7 +519,7 @@ export const products: Product[] = [
     shortDescription: "Hormônio tireoidiano para metabolismo acelerado.",
     description: "Forma ativa do hormônio tireoidiano, acelera o metabolismo basal e a queima de gordura.",
     price: 119.90,
-    image: t3Img,
+    image: '/Products/Comprimidos/T3.png',
     category: "oral",
     type: "t3",
     gender: ["men", "women"], // Ambos
@@ -536,7 +540,7 @@ export const products: Product[] = [
     shortDescription: "Hormônio tireoidiano (forma inativa).",
     description: "Pró-hormônio que é convertido em T3 no corpo, usado para tratar hipotireoidismo.",
     price: 89.90,
-    image: t4Img,
+    image: '/Products/Comprimidos/T4.png',
     category: "oral",
     type: "t4",
     gender: ["men", "women"], // Ambos
@@ -557,7 +561,7 @@ export const products: Product[] = [
     shortDescription: "Inibidor de absorção de gordura.",
     description: "Medicamento que inibe enzimas que digerem gordura, reduzindo sua absorção intestinal.",
     price: 179.90,
-    image: xenicalImg,
+    image: '/Products/Comprimidos/Xenical.png',
     category: "oral",
     type: "xenical",
     gender: ["men", "women"], // Ambos
@@ -578,7 +582,7 @@ export const products: Product[] = [
     shortDescription: "Alternativa a esteroides, menos colaterais.",
     description: "Compostos que se ligam seletivamente a receptores androgênicos em músculo e osso, promovendo efeitos anabólicos com menos efeitos colaterais sistêmicos.",
     price: 259.90,
-    image: sarmsImg,
+    image: '/Products/Comprimidos/Sarms.png',
     category: "oral",
     type: "sarms",
     gender: ["men", "women"], // Ambos (dependendo do SARM)
@@ -599,8 +603,8 @@ export const products: Product[] = [
     shortDescription: "Termogênico extremamente perigoso (NÃO RECOMENDADO).",
     description: "Desacoplador de fosforilação oxidativa que gera calor, resultando em perda de gordura extrema. ALTAMENTE TÓXICO e fatal em doses altas.",
     price: 999.90, // Preço simbólico para algo perigoso
-    image: dnpImg,
-    category: "oral",
+    image: '/Products/Comprimidos/DNP.png',
+    category: "oral", // Mantendo como oral pois é ingerido, mas perigoso.
     type: "dnp",
     gender: ["men", "women"],
     features: ["Queima gordura extrema", "Aumento de temperatura corporal"],
@@ -620,7 +624,7 @@ export const products: Product[] = [
     shortDescription: "Inibidor de apetite (USO MÉDICO).",
     description: "Medicamento supressor de apetite e termogênico, usado no tratamento da obesidade sob supervisão médica rigorosa.",
     price: 149.90,
-    image: sibutraproImg,
+    image: '/Products/Comprimidos/SibutraPro.png',
     category: "oral",
     type: "sibutrapro",
     gender: ["men", "women"], // Ambos
@@ -643,7 +647,7 @@ export const products: Product[] = [
     shortDescription: "Anabólico injetável seguro para mulheres.",
     description: "Apresentação injetável do Primobolan, seguro e com baixo risco de virilização para mulheres.",
     price: 399.90,
-    image: primobolanImg, // Usa a mesma imagem do Primobolan Depot
+    image: '/Products/Injetaveis/Primobolan.png', // Usa a mesma imagem do Primobolan Depot
     category: "injectable",
     type: "primobolan",
     gender: ["women"],
@@ -664,9 +668,9 @@ export const products: Product[] = [
     shortDescription: "Anabólico injetável para mulheres (risco).",
     description: "Embora menos androgênica que a testosterona, a Deca ainda apresenta risco de virilização em mulheres, especialmente em doses mais altas.",
     price: 299.90,
-    image: decanoatoNandrolonaImg, // Usa a mesma imagem
+    image: '/Products/Injetaveis/DecanoatoNandrolona.png', // Usa a mesma imagem
     category: "injectable",
-    type: "nandrolone",
+    type: "nandrolone-decanoate",
     gender: ["women"],
     features: ["Proteção articular", "Ganho de massa (com risco)"],
     usage: "50-100 mg/semana (com cuidado)",
@@ -685,7 +689,7 @@ export const products: Product[] = [
     shortDescription: "Anabólico injetável para mulheres (risco).",
     description: "Boldenona pode ser usada por mulheres, mas com risco de virilização. Proporciona ganhos de qualidade.",
     price: 259.90,
-    image: boldenonaImg, // Usa a mesma imagem
+    image: '/Products/Injetaveis/Boldenona.png', // Usa a mesma imagem
     category: "injectable",
     type: "boldenone",
     gender: ["women"],
@@ -708,7 +712,7 @@ export const products: Product[] = [
     shortDescription: "Anabólico oral mais seguro para mulheres.",
     description: "Considerado um dos esteroides orais mais seguros para mulheres devido ao baixo risco de virilização.",
     price: 179.90,
-    image: oxandrolonaWomenImg,
+    image: '/Products/Comprimidos/Oxandrolona.png',
     category: "oral",
     type: "oxandrolone",
     gender: ["women"],
@@ -730,7 +734,7 @@ export const products: Product[] = [
     shortDescription: "Anabólico oral para mulheres (risco moderado).",
     description: "Embora popular, o Stanozolol oral apresenta risco moderado de virilização em mulheres.",
     price: 169.90,
-    image: stanozololOralImg, // Usa a mesma imagem
+    image: '/Products/Comprimidos/Stanozolol.png', // Usa a mesma imagem
     category: "oral",
     type: "stanozolol",
     gender: ["women"],
@@ -745,144 +749,13 @@ export const products: Product[] = [
     rating: 4.0,
     reviews: 30,
   },
-
-  // OUTROS
-  {
-    id: "vitamina-d",
-    name: "Vitamina D3",
-    shortDescription: "Suporte para saúde óssea e imunidade.",
-    description: "Vitamina essencial para a saúde óssea, função imunológica e metabolismo.",
-    price: 49.90,
-    image: "/Products/Outros/VitaminaD3.png",
-    category: "other",
-    type: "vitamin",
-    gender: ["men", "women"], // Ambos
-    features: ["Saúde óssea", "Imunidade", "Bem-estar"],
-    usage: "5000-10000 UI/dia",
-    duration: "Contínuo",
-    indications: "Deficiência de Vitamina D, suporte geral",
-    precautions: "Não exceder dose (pode causar hipercalcemia)",
-    sideEffects: "Raro em doses normais",
-    benefits: "Fortalece ossos, melhora humor",
-    stock: 50,
-    rating: 4.9,
-    reviews: 150,
-  },
-   {
-    id: "omega-3",
-    name: "Ômega 3 (Óleo de Peixe)",
-    shortDescription: "Ácidos graxos essenciais para saúde cardiovascular e cerebral.",
-    description: "Suplemento rico em EPA e DHA, importante para reduzir inflamações, saúde do coração e função cerebral.",
-    price: 59.90,
-    image: "/Products/Outros/Omega3.png",
-    category: "other",
-    type: "omega-3",
-    gender: ["men", "women"], // Ambos
-    features: ["Saúde cardíaca", "Anti-inflamatório", "Função cerebral"],
-    usage: "1-3 g/dia",
-    duration: "Contínuo",
-    indications: "Saúde geral, redução de triglicerídeos",
-    precautions: "Pode interagir com anticoagulantes",
-    sideEffects: "Desconforto gástrico (raro)",
-    benefits: "Reduz inflamação, melhora humor",
-    stock: 48,
-    rating: 4.9,
-    reviews: 140,
-  },
-  {
-    id: "creatina",
-    name: "Creatina Monohidratada",
-    shortDescription: "Melhora força e desempenho nos treinos.",
-    description: "Um dos suplementos mais estudados e eficazes para aumentar força, potência e desempenho muscular.",
-    price: 79.90,
-    image: "/Products/Outros/Creatina.png",
-    category: "other",
-    type: "creatine",
-    gender: ["men", "women"], // Ambos
-    features: ["Aumento de força", "Desempenho", "Recuperação"],
-    usage: "3-5 g/dia (após fase de saturação opcional)",
-    duration: "Contínuo",
-    indications: "Melhora de performance",
-    precautions: "Manter boa hidratação",
-    sideEffects: "Retenção hídrica (inicial), desconforto gástrico (raro)",
-    benefits: "Mais força, mais volume",
-    stock: 60,
-    rating: 5.0,
-    reviews: 200,
-    isPopular: true,
-    isFeatured: true
-  },
-    {
-    id: "whey-protein",
-    name: "Whey Protein Concentrado",
-    shortDescription: "Proteína de rápida absorção para recuperação.",
-    description: "Suplemento de proteína de soro de leite, ideal para recuperação muscular pós-treino.",
-    price: 129.90,
-    image: "/Products/Outros/WheyProtein.png",
-    category: "other",
-    type: "protein",
-    gender: ["men", "women"], // Ambos
-    features: ["Recuperação muscular", "Alta absorção", "Prático"],
-    usage: "20-30 g pós-treino ou entre refeições",
-    duration: "Contínuo",
-    indications: "Suporte proteico, recuperação",
-    precautions: "Intolerância à lactose (se aplicável)",
-    sideEffects: "Desconforto gástrico (raro)",
-    benefits: "Recuperação, crescimento muscular",
-    stock: 55,
-    rating: 4.9,
-    reviews: 180,
-  },
-  {
-    id: "bcaa",
-    name: "BCAA (Aminoácidos de Cadeia Ramificada)",
-    shortDescription: "Aminoácidos para recuperação e energia.",
-    description: "Leucina, Isoleucina e Valina. Auxiliam na recuperação muscular e podem fornecer energia durante o treino.",
-    price: 89.90,
-    image: "/Products/Outros/BCAA.png",
-    category: "other",
-    type: "bcaa",
-    gender: ["men", "women"], // Ambos
-    features: ["Recuperação", "Energia", "Anti-catabólico"],
-    usage: "5-10 g antes, durante ou após treino",
-    duration: "Contínuo",
-    indications: "Recuperação muscular",
-    precautions: "Nenhum significativo",
-    sideEffects: "Nenhum significativo",
-    benefits: "Reduz fadiga, acelera recuperação",
-    stock: 40,
-    rating: 4.7,
-    reviews: 110,
-  },
-   {
-    id: "pre-treino",
-    name: "Pré-Treino",
-    shortDescription: "Aumento de energia, foco e desempenho.",
-    description: "Suplemento formulado para aumentar energia, foco, força e resistência durante o treino.",
-    price: 119.90,
-    image: "/Products/Outros/PreTreino.png",
-    category: "other",
-    type: "pre-workout",
-    gender: ["men", "women"], // Ambos
-    features: ["Energia", "Foco", "Resistência"],
-    usage: "1 dose 20-30 minutos antes do treino",
-    duration: "Usar em dias de treino",
-    indications: "Melhorar desempenho no treino",
-    precautions: "Sensibilidade a estimulantes (cafeína)",
-    sideEffects: "Taquicardia, insônia, formigamento (com beta-alanina)",
-    benefits: "Mais intensidade no treino",
-    stock: 30,
-    rating: 4.8,
-    reviews: 95,
-    isPopular: true
-  },
 ];
 
 export const getProductById = (id: string): Product | undefined => {
   return products.find(product => product.id === id);
 };
 
-export const getProductsByCategory = (category: string): Product[] => {
+export const getProductsByCategory = (category: ProductCategory): Product[] => {
   return products.filter(product => product.category === category);
 };
 

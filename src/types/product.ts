@@ -6,8 +6,8 @@ export interface Product {
   price: number;
   discountPrice?: number;
   image: string;
-  category: ProductCategory;
-  type: ProductType;
+  category?: ProductCategory;
+  type?: ProductType;
   gender: ProductGender[];
   features: string[];
   usage: string;

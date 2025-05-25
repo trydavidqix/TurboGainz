@@ -11,6 +11,10 @@ import PromoCarousel from "@/components/PromoCarousel";
 import { Helmet } from "react-helmet-async";
 import RotatingText from "@/components/RotatingText";
 
+import qualidadeIcon from "/icons/qualidade.png";
+import entregaIcon from "/icons/entrega.png";
+import suporteIcon from "/icons/suporte.png";
+
 const HomePage = () => {
   const [activeCategory, setActiveCategory] = useState<string>("all");
 
@@ -410,7 +414,7 @@ const HomePage = () => {
               {/* Card 1 - Produtos de Qualidade */}
               <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#0A0D0D]">
                 <img
-                  src={`${import.meta.env.BASE_URL}icons/qualidade.png`}
+                  src={qualidadeIcon}
                   alt="Ícone de Qualidade"
                   className="w-16 h-16 object-contain mx-auto mb-6"
                 />
@@ -426,7 +430,7 @@ const HomePage = () => {
               {/* Card 2 - Entrega Rápida */}
               <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#0A0D0D]">
                 <img
-                  src={`${import.meta.env.BASE_URL}icons/entrega.png`}
+                  src={entregaIcon}
                   alt="Ícone de Entrega"
                   className="w-16 h-16 object-contain mx-auto mb-6"
                 />
@@ -442,7 +446,7 @@ const HomePage = () => {
               {/* Card 3 - Suporte Especializado */}
               <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#0A0D0D]">
                 <img
-                  src={`${import.meta.env.BASE_URL}icons/suporte.png`}
+                  src={suporteIcon}
                   alt="Ícone de Suporte"
                   className="w-16 h-16 object-contain mx-auto mb-6"
                 />

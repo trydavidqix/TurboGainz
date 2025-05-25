@@ -3,6 +3,15 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import qualidadeIcon from "/icons/qualidade.png";
+import transparenciaIcon from "/icons/transparency.png";
+import expertiseIcon from "/icons/experience.png";
+import equipeImg from "/Equipe/Equipe.png";
+import catarinaImg from "/Equipe/catarina.png";
+import davidImg from "/Equipe/david.png";
+import joseImg from "/Equipe/jose.png";
+import marciaImg from "/Equipe/marcia.png";
+
 const AboutPage = () => {
   return (
     <div className="page-container">
@@ -52,7 +61,7 @@ const AboutPage = () => {
               </div>
               <div className="bg-shark-950 rounded-lg p-1 flex items-center justify-center">
                 <img
-                  src={`${import.meta.env.BASE_URL}Equipe/Equipe.png`}
+                  src={equipeImg}
                   alt="Equipe TurboGainz"
                   className="rounded-lg max-w-full"
                 />
@@ -72,7 +81,7 @@ const AboutPage = () => {
               {/* Card 1 - Qualidade */}
               <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#262626] flex flex-col h-full">
                 <img
-                  src={`${import.meta.env.BASE_URL}icons/service.png`}
+                  src={qualidadeIcon}
                   alt="Ícone de Qualidade"
                   className="w-16 h-16 object-contain mx-auto mb-6"
                 />
@@ -89,7 +98,7 @@ const AboutPage = () => {
               {/* Card 2 - Transparência */}
               <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#262626] flex flex-col h-full">
                 <img
-                  src={`${import.meta.env.BASE_URL}icons/transparency.png`}
+                  src={transparenciaIcon}
                   alt="Ícone de Transparência"
                   className="w-16 h-16 object-contain mx-auto mb-6"
                 />
@@ -106,7 +115,7 @@ const AboutPage = () => {
               {/* Card 3 - Expertise */}
               <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#262626] flex flex-col h-full">
                 <img
-                  src={`${import.meta.env.BASE_URL}icons/experience.png`}
+                  src={expertiseIcon}
                   alt="Ícone de Expertise"
                   className="w-16 h-16 object-contain mx-auto mb-6"
                 />
@@ -133,7 +142,7 @@ const AboutPage = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
               <div className="text-center">
                 <img
-                  src={`${import.meta.env.BASE_URL}Equipe/catarina.png`}
+                  src={catarinaImg}
                   alt="Catarina"
                   className="w-40 h-35 rounded-full object-cover border-4 border-black-700 mx-auto mb-4"
                 />
@@ -147,7 +156,7 @@ const AboutPage = () => {
 
               <div className="text-center">
                 <img
-                  src={`${import.meta.env.BASE_URL}Equipe/david.png`}
+                  src={davidImg}
                   alt="David"
                   className="w-40 h-35 rounded-full object-cover border-4 border-black-700 mx-auto mb-4"
                 />
@@ -161,7 +170,7 @@ const AboutPage = () => {
 
               <div className="text-center">
                 <img
-                  src={`${import.meta.env.BASE_URL}Equipe/jose.png`}
+                  src={joseImg}
                   alt="Jose"
                   className="w-40 h-35 rounded-full object-cover border-4 border-black-700 mx-auto mb-4"
                 />
@@ -175,7 +184,7 @@ const AboutPage = () => {
 
               <div className="text-center">
                 <img
-                  src={`${import.meta.env.BASE_URL}Equipe/marcia.png`}
+                  src={marciaImg}
                   alt="Marcia"
                   className="w-40 h-35 rounded-full object-cover border-4 border-black-700 mx-auto mb-4"
                 />

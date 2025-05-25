@@ -7,6 +7,7 @@ import React, { useState } from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils"; // assuming cn is a helper for clsx/tailwind-merge
 import Counter from "./Counter";
+import cartGif from "/icons/cart.gif";
 
 const productCardVariants = cva(
   "bg-[#0A0D0D] max-w-sm w-full rounded-lg shadow-md border flex flex-col h-full overflow-hidden transition-shadow duration-300 group",
@@ -58,7 +59,11 @@ const ProductCard = React.memo(
       >
         <div className="relative h-39 bg-background flex items-center justify-center">
           <img
-            src={product.image.startsWith('/') ? `${import.meta.env.BASE_URL}${product.image.substring(1)}` : product.image}
+            src={
+              product.image.startsWith("/")
+                ? `${import.meta.env.BASE_URL}${product.image.substring(1)}`
+                : product.image
+            }
             alt={product.name}
             className="object-cover w-full h-full"
             loading="lazy"
@@ -109,7 +114,12 @@ const ProductCard = React.memo(
               }}
               className="flex-grow bg-black-900 hover:bg-black-800 text-highlight-foreground"
             >
-              <img src={`${import.meta.env.BASE_URL}icons/cart.gif`} className="mr-2 h-4 w-4 bg-white rounded" alt="Carrinho" aria-hidden="true" />
+              <img
+                src={cartGif}
+                className="mr-2 h-4 w-4 bg-white rounded"
+                alt="Carrinho"
+                aria-hidden="true"
+              />
               Comprar
             </Button>
             <div className="flex items-center justify-between bg-black-900 rounded-md">

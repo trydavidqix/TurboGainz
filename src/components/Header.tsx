@@ -258,7 +258,7 @@ const Header = () => {
                     <NavigationMenuLink
                       asChild
                       className={cn(
-                        "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-[#0A0D0D] hover:text-white focus:bg-[#0A0D0D] focus:text-white",
+                        "flex select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-[#0A0D0D] hover:text-white focus:bg-[#0A0D0D] focus:text-white",
                         isActive("/") ? "font-medium bg-[#0A0D0D]" : ""
                       )}
                     >
@@ -272,7 +272,7 @@ const Header = () => {
                     <NavigationMenuLink
                       asChild
                       className={cn(
-                        "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-[#0A0D0D] hover:text-white focus:bg-[#0A0D0D] focus:text-white",
+                        "flex select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-[#0A0D0D] hover:text-white focus:bg-[#0A0D0D] focus:text-white",
                         isActive("/products") ? "font-medium bg-[#0A0D0D]" : ""
                       )}
                     >
@@ -355,7 +355,7 @@ const Header = () => {
                             <NavigationMenuLink asChild>
                               <Link
                                 to="/category/men"
-                                className="block select-none rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-black-800 hover:text-white text-black-100 flex items-center gap-2"
+                                className="flex select-none rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-black-800 hover:text-white text-black-100 items-center gap-2"
                               >
                                 <img
                                   src="/icons/icons8-muscle-flexing-skin-type-3-96.png"
@@ -372,7 +372,7 @@ const Header = () => {
                             <NavigationMenuLink asChild>
                               <Link
                                 to="/category/women"
-                                className="block select-none rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-black-800 hover:text-white text-black-100 flex items-center gap-2"
+                                className="flex select-none rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-black-800 hover:text-white text-black-100 items-center gap-2"
                               >
                                 <img
                                   src="/icons/icons8-weightlift-64.png"
@@ -389,7 +389,7 @@ const Header = () => {
                             <NavigationMenuLink asChild>
                               <Link
                                 to="/category/injectable"
-                                className="block select-none rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-black-800 hover:text-white text-black-100 flex items-center gap-2"
+                                className="flex select-none rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-black-800 hover:text-white text-black-100 items-center gap-2"
                               >
                                 <img
                                   src="/icons/icons8-injection-64.png"
@@ -406,7 +406,7 @@ const Header = () => {
                             <NavigationMenuLink asChild>
                               <Link
                                 to="/category/oral"
-                                className="block select-none rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-black-800 hover:text-white text-black-100 flex items-center gap-2"
+                                className="flex select-none rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-black-800 hover:text-white text-black-100 items-center gap-2"
                               >
                                 <img
                                   src="/icons/icons8-pills-50.png"
@@ -430,7 +430,7 @@ const Header = () => {
                     <NavigationMenuLink
                       asChild
                       className={cn(
-                        "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-[#0A0D0D] hover:text-white focus:bg-[#0A0D0D] focus:text-white",
+                        "flex select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-[#0A0D0D] hover:text-white focus:bg-[#0A0D0D] focus:text-white",
                         isActive("/about") ? "font-medium bg-[#0A0D0D]" : ""
                       )}
                     >
@@ -444,7 +444,7 @@ const Header = () => {
                     <NavigationMenuLink
                       asChild
                       className={cn(
-                        "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-[#0A0D0D] hover:text-white focus:bg-[#0A0D0D] focus:text-white",
+                        "flex select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-[#0A0D0D] hover:text-white focus:bg-[#0A0D0D] focus:text-white",
                         isActive("/contact") ? "font-medium bg-[#0A0D0D]" : ""
                       )}
                     >

@@ -1,6 +1,7 @@
 # TurboGainz 🏋️‍♂️
 
-E-commerce moderno de produtos fitness e suplementos, feito com React, TypeScript e TailwindCSS. Foco em performance, responsividade e boa experiência de usuário.
+E-commerce moderno focado na venda de “hormônios” e produtos hardcore pra crescimento muscular, feito com React, TypeScript e TailwindCSS. Interface responsiva, rápida e com experiência de usuário na veia.
+
 
 ---
 

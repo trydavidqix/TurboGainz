@@ -3,9 +3,9 @@ import { Facebook, Instagram, Twitter, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-black-950 text-black-50">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer className="bg-black-950 text-black-50 w-full">
+      <div className="container mx-auto px-2 sm:px-4 py-8 sm:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">TurboGainz</h3>
             <p className="text-black-300 mb-4">
@@ -13,33 +13,27 @@ const Footer = () => {
               físico.
             </p>
             <div className="flex space-x-4">
-              <a
-                href="https://facebook.com"
-                target="_blank"
+              <span
                 rel="noopener noreferrer"
                 className="text-black-300 hover:text-black-100"
                 aria-label="Visite nosso Facebook"
               >
                 <Facebook className="h-5 w-5" aria-hidden="true" />
-              </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
+              </span>
+              <span
                 rel="noopener noreferrer"
                 className="text-black-300 hover:text-black-100"
                 aria-label="Visite nosso Instagram"
               >
                 <Instagram className="h-5 w-5" aria-hidden="true" />
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
+              </span>
+              <span
                 rel="noopener noreferrer"
                 className="text-black-300 hover:text-black-100"
                 aria-label="Visite nosso Twitter"
               >
                 <Twitter className="h-5 w-5" aria-hidden="true" />
-              </a>
+              </span>
             </div>
           </div>
 
@@ -140,12 +134,9 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center gap-2 text-black-300">
                 <Mail className="h-4 w-4" aria-hidden="true" />
-                <a
-                  href="mailto:contato@turbogainz.com"
-                  className="hover:text-black-100"
-                >
+                <span className="hover:text-black-100">
                   contato@turbogainz.com
-                </a>
+                </span>
               </li>
               <li className="text-black-300">
                 <span>Seg - Sex: 9:00 - 18:00</span>
@@ -167,7 +158,7 @@ const Footer = () => {
                   id="newsletter-email"
                   required
                   placeholder="Seu email"
-                  className="px-3 py-2 bg-black-800 text-black-50 border-0 rounded-l-md focus:outline-none focus:ring-1 focus:ring-black-500 flex-1"
+                  className="px-2 sm:px-3 py-2 bg-black-800 text-black-50 border-0 rounded-l-md focus:outline-none focus:ring-1 focus:ring-black-500 flex-1 w-full sm:w-auto"
                 />
                 <button
                   type="submit"

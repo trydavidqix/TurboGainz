@@ -50,7 +50,11 @@ const PromoCarousel = () => {
       {promoImages.map((image, idx) => (
         <img
           key={image.src}
-          src={image.src}
+          src={
+            image.src.startsWith("/")
+              ? `${import.meta.env.BASE_URL}${image.src.substring(1)}`
+              : image.src
+          }
           alt={image.alt}
           className={`w-full h-full object-contain transition-opacity duration-1000 absolute top-0 left-0 ${
             current === idx ? "opacity-100 z-10" : "opacity-0 z-0"

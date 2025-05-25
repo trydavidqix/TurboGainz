@@ -52,7 +52,7 @@ const AboutPage = () => {
               </div>
               <div className="bg-shark-950 rounded-lg p-1 flex items-center justify-center">
                 <img
-                  src="/Equipe/Equipe.png"
+                  src={`${import.meta.env.BASE_URL}Equipe/Equipe.png`}
                   alt="Equipe TurboGainz"
                   className="rounded-lg max-w-full"
                 />
@@ -72,7 +72,7 @@ const AboutPage = () => {
               {/* Card 1 - Qualidade */}
               <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#262626] flex flex-col h-full">
                 <img
-                  src="/icons/service.png"
+                  src={`${import.meta.env.BASE_URL}icons/service.png`}
                   alt="Ícone de Qualidade"
                   className="w-16 h-16 object-contain mx-auto mb-6"
                 />
@@ -89,7 +89,7 @@ const AboutPage = () => {
               {/* Card 2 - Transparência */}
               <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#262626] flex flex-col h-full">
                 <img
-                  src="/icons/transparency.png"
+                  src={`${import.meta.env.BASE_URL}icons/transparency.png`}
                   alt="Ícone de Transparência"
                   className="w-16 h-16 object-contain mx-auto mb-6"
                 />
@@ -106,7 +106,7 @@ const AboutPage = () => {
               {/* Card 3 - Expertise */}
               <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#262626] flex flex-col h-full">
                 <img
-                  src="/icons/experience.png"
+                  src={`${import.meta.env.BASE_URL}icons/experience.png`}
                   alt="Ícone de Expertise"
                   className="w-16 h-16 object-contain mx-auto mb-6"
                 />
@@ -133,7 +133,7 @@ const AboutPage = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
               <div className="text-center">
                 <img
-                  src="/Equipe/catarina.png"
+                  src={`${import.meta.env.BASE_URL}Equipe/catarina.png`}
                   alt="Catarina"
                   className="w-40 h-35 rounded-full object-cover border-4 border-black-700 mx-auto mb-4"
                 />
@@ -147,7 +147,7 @@ const AboutPage = () => {
 
               <div className="text-center">
                 <img
-                  src="/Equipe/david.png"
+                  src={`${import.meta.env.BASE_URL}Equipe/david.png`}
                   alt="David"
                   className="w-40 h-35 rounded-full object-cover border-4 border-black-700 mx-auto mb-4"
                 />
@@ -161,7 +161,7 @@ const AboutPage = () => {
 
               <div className="text-center">
                 <img
-                  src="/Equipe/jose.png"
+                  src={`${import.meta.env.BASE_URL}Equipe/jose.png`}
                   alt="Jose"
                   className="w-40 h-35 rounded-full object-cover border-4 border-black-700 mx-auto mb-4"
                 />
@@ -175,7 +175,7 @@ const AboutPage = () => {
 
               <div className="text-center">
                 <img
-                  src="/Equipe/marcia.png"
+                  src={`${import.meta.env.BASE_URL}Equipe/marcia.png`}
                   alt="Marcia"
                   className="w-40 h-35 rounded-full object-cover border-4 border-black-700 mx-auto mb-4"
                 />

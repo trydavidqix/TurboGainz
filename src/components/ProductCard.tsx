@@ -58,9 +58,9 @@ const ProductCard = React.memo(
       >
         <div className="relative h-39 bg-background flex items-center justify-center">
           <img
-            src={product.image}
+            src={product.image.startsWith('/') ? `${import.meta.env.BASE_URL}${product.image.substring(1)}` : product.image}
             alt={product.name}
-            className="object-contain w-full h-full"
+            className="object-cover w-full h-full"
             loading="lazy"
           />
           {product.isNew && (
@@ -109,7 +109,7 @@ const ProductCard = React.memo(
               }}
               className="flex-grow bg-black-900 hover:bg-black-800 text-highlight-foreground"
             >
-              <ShoppingCart className="mr-2 h-4 w-4" aria-hidden="true" />
+              <img src={`${import.meta.env.BASE_URL}icons/cart.gif`} className="mr-2 h-4 w-4 bg-white rounded" alt="Carrinho" aria-hidden="true" />
               Comprar
             </Button>
             <div className="flex items-center justify-between bg-black-900 rounded-md">

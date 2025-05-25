@@ -313,7 +313,13 @@ const Header = () => {
                             >
                               <div className="flex items-center gap-2">
                                 <img
-                                  src={product.image}
+                                  src={
+                                    product.image.startsWith("/")
+                                      ? `${
+                                          import.meta.env.BASE_URL
+                                        }${product.image.substring(1)}`
+                                      : product.image
+                                  }
                                   alt={product.name}
                                   className="w-8 h-8 object-contain rounded"
                                 />
@@ -338,7 +344,9 @@ const Header = () => {
                               to="/products"
                             >
                               <img
-                                src="/icons/icons8-steroids-64.png"
+                                src={`${
+                                  import.meta.env.BASE_URL
+                                }icons/icons8-steroids-64.png`}
                                 alt="Ícone de Esteroides para Produtos"
                                 className="w-12 h-12 mb-2"
                               />
@@ -358,7 +366,9 @@ const Header = () => {
                                 className="flex select-none rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-black-800 hover:text-white text-black-100 items-center gap-2"
                               >
                                 <img
-                                  src="/icons/icons8-muscle-flexing-skin-type-3-96.png"
+                                  src={`${
+                                    import.meta.env.BASE_URL
+                                  }icons/icons8-muscle-flexing-skin-type-3-96.png`}
                                   alt="Ícone Para Homens"
                                   className="w-5 h-5 mr-2"
                                 />
@@ -375,7 +385,9 @@ const Header = () => {
                                 className="flex select-none rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-black-800 hover:text-white text-black-100 items-center gap-2"
                               >
                                 <img
-                                  src="/icons/icons8-weightlift-64.png"
+                                  src={`${
+                                    import.meta.env.BASE_URL
+                                  }icons/icons8-weightlift-64.png`}
                                   alt="Ícone Para Mulheres"
                                   className="w-5 h-5 mr-2"
                                 />
@@ -392,7 +404,9 @@ const Header = () => {
                                 className="flex select-none rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-black-800 hover:text-white text-black-100 items-center gap-2"
                               >
                                 <img
-                                  src="/icons/icons8-injection-64.png"
+                                  src={`${
+                                    import.meta.env.BASE_URL
+                                  }icons/icons8-injection-64.png`}
                                   alt="Ícone Injetáveis"
                                   className="w-5 h-5 mr-2"
                                 />
@@ -409,7 +423,9 @@ const Header = () => {
                                 className="flex select-none rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-black-800 hover:text-white text-black-100 items-center gap-2"
                               >
                                 <img
-                                  src="/icons/icons8-pills-50.png"
+                                  src={`${
+                                    import.meta.env.BASE_URL
+                                  }icons/icons8-pills-50.png`}
                                   alt="Ícone Comprimidos"
                                   className="w-5 h-5 mr-2"
                                 />

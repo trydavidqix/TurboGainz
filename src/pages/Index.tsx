@@ -61,45 +61,61 @@ const HomePage = () => {
         {/* Favicons */}
         <link
           rel="icon"
-          href="/favicon_io/icons8-muscle-office-l-16.png"
+          href={`${
+            import.meta.env.BASE_URL
+          }favicon_io/icons8-muscle-office-l-16.png`}
           sizes="16x16"
           type="image/png"
         />
         <link
           rel="icon"
-          href="/favicon_io/icons8-muscle-office-l-32.png"
+          href={`${
+            import.meta.env.BASE_URL
+          }favicon_io/icons8-muscle-office-l-32.png`}
           sizes="32x32"
           type="image/png"
         />
         <link
           rel="apple-touch-icon"
-          href="/favicon_io/icons8-muscle-office-l-57.png"
+          href={`${
+            import.meta.env.BASE_URL
+          }favicon_io/icons8-muscle-office-l-57.png`}
           sizes="57x57"
         />
         <link
           rel="apple-touch-icon"
-          href="/favicon_io/icons8-muscle-office-l-60.png"
+          href={`${
+            import.meta.env.BASE_URL
+          }favicon_io/icons8-muscle-office-l-60.png`}
           sizes="60x60"
         />
         <link
           rel="icon"
-          href="/favicon_io/icons8-muscle-office-l-70.png"
+          href={`${
+            import.meta.env.BASE_URL
+          }favicon_io/icons8-muscle-office-l-70.png`}
           sizes="70x70"
           type="image/png"
         />
         <link
           rel="apple-touch-icon"
-          href="/favicon_io/icons8-muscle-office-l-72.png"
+          href={`${
+            import.meta.env.BASE_URL
+          }favicon_io/icons8-muscle-office-l-72.png`}
           sizes="72x72"
         />
         <link
           rel="apple-touch-icon"
-          href="/favicon_io/icons8-muscle-office-l-76.png"
+          href={`${
+            import.meta.env.BASE_URL
+          }favicon_io/icons8-muscle-office-l-76.png`}
           sizes="76x76"
         />
         <link
           rel="icon"
-          href="/favicon_io/icons8-muscle-office-l-96.png"
+          href={`${
+            import.meta.env.BASE_URL
+          }favicon_io/icons8-muscle-office-l-96.png`}
           sizes="96x96"
           type="image/png"
         />
@@ -172,7 +188,9 @@ const HomePage = () => {
               <Link to="/category/men" className="group">
                 <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#262626] flex flex-col h-full">
                   <img
-                    src="/icons/icons8-muscle-flexing-skin-type-3-96.png"
+                    src={`${
+                      import.meta.env.BASE_URL
+                    }icons/icons8-muscle-flexing-skin-type-3-96.png`}
                     alt="Ícone de Músculo para Homens"
                     className="w-16 h-16 object-contain mx-auto mb-6"
                     loading="lazy"
@@ -199,7 +217,9 @@ const HomePage = () => {
               <Link to="/category/women" className="group">
                 <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#262626] flex flex-col h-full">
                   <img
-                    src="/icons/icons8-weightlift-64.png"
+                    src={`${
+                      import.meta.env.BASE_URL
+                    }icons/icons8-weightlift-64.png`}
                     alt="Ícone de Halter para Mulheres"
                     className="w-16 h-16 object-contain mx-auto mb-6"
                     loading="lazy"
@@ -226,7 +246,9 @@ const HomePage = () => {
               <Link to="/category/injectable" className="group">
                 <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#262626] flex flex-col h-full">
                   <img
-                    src="/icons/icons8-injection-64.png"
+                    src={`${
+                      import.meta.env.BASE_URL
+                    }icons/icons8-injection-64.png`}
                     alt="Ícone de Seringa para Injetáveis"
                     className="w-16 h-16 object-contain mx-auto mb-6"
                     loading="lazy"
@@ -253,7 +275,7 @@ const HomePage = () => {
               <Link to="/category/oral" className="group">
                 <div className="bg-black-900 rounded-xl p-1 border border-black-700 transition-all duration-300 hover:bg-[#262626] flex flex-col h-full w-full justify-evenly">
                   <img
-                    src="/icons/icons8-pills-50.png"
+                    src={`${import.meta.env.BASE_URL}icons/icons8-pills-50.png`}
                     alt="Ícone de Pílulas para Comprimidos"
                     className="w-16 h-16 object-contain mx-auto mb-6"
                     loading="lazy"
@@ -388,8 +410,8 @@ const HomePage = () => {
               {/* Card 1 - Produtos de Qualidade */}
               <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#0A0D0D]">
                 <img
-                  src="/icons/badge.png"
-                  alt="Ícone de Badge"
+                  src={`${import.meta.env.BASE_URL}icons/qualidade.png`}
+                  alt="Ícone de Qualidade"
                   className="w-16 h-16 object-contain mx-auto mb-6"
                 />
                 <h3 className="text-xl font-bold mb-4 text-center text-[#f6f6f6]">
@@ -404,8 +426,8 @@ const HomePage = () => {
               {/* Card 2 - Entrega Rápida */}
               <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#0A0D0D]">
                 <img
-                  src="/icons/fast-delivery.png"
-                  alt="Ícone de Entrega Rápida"
+                  src={`${import.meta.env.BASE_URL}icons/entrega.png`}
+                  alt="Ícone de Entrega"
                   className="w-16 h-16 object-contain mx-auto mb-6"
                 />
                 <h3 className="text-xl font-bold mb-4 text-center text-[#f6f6f6]">
@@ -420,8 +442,8 @@ const HomePage = () => {
               {/* Card 3 - Suporte Especializado */}
               <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#0A0D0D]">
                 <img
-                  src="/icons/message.png"
-                  alt="Ícone de Suporte Especializado"
+                  src={`${import.meta.env.BASE_URL}icons/suporte.png`}
+                  alt="Ícone de Suporte"
                   className="w-16 h-16 object-contain mx-auto mb-6"
                 />
                 <h3 className="text-xl font-bold mb-4 text-center text-[#f6f6f6]">

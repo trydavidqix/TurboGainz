@@ -11,9 +11,9 @@ import PromoCarousel from "@/components/PromoCarousel";
 import { Helmet } from "react-helmet-async";
 import RotatingText from "@/components/RotatingText";
 
-import qualidadeIcon from "/icons/qualidade.png";
-import entregaIcon from "/icons/entrega.png";
-import suporteIcon from "/icons/suporte.png";
+import badgeIcon from "/icons/badge.png";
+import fastDeliveryIcon from "/icons/fast-delivery.png";
+import messageIcon from "/icons/message.png";
 
 const HomePage = () => {
   const [activeCategory, setActiveCategory] = useState<string>("all");
@@ -411,10 +411,10 @@ const HomePage = () => {
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Card 1 - Produtos de Qualidade */}
-              <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#0A0D0D]">
+              {/* Card 1 - Qualidade */}
+              <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#262626] flex flex-col h-full">
                 <img
-                  src={qualidadeIcon}
+                  src={badgeIcon}
                   alt="Ícone de Qualidade"
                   className="w-16 h-16 object-contain mx-auto mb-6"
                 />
@@ -427,10 +427,10 @@ const HomePage = () => {
                 </p>
               </div>
 
-              {/* Card 2 - Entrega Rápida */}
-              <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#0A0D0D]">
+              {/* Card 2 - Entrega */}
+              <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#262626] flex flex-col h-full">
                 <img
-                  src={entregaIcon}
+                  src={fastDeliveryIcon}
                   alt="Ícone de Entrega"
                   className="w-16 h-16 object-contain mx-auto mb-6"
                 />
@@ -443,10 +443,10 @@ const HomePage = () => {
                 </p>
               </div>
 
-              {/* Card 3 - Suporte Especializado */}
-              <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#0A0D0D]">
+              {/* Card 3 - Suporte */}
+              <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#262626] flex flex-col h-full">
                 <img
-                  src={suporteIcon}
+                  src={messageIcon}
                   alt="Ícone de Suporte"
                   className="w-16 h-16 object-contain mx-auto mb-6"
                 />

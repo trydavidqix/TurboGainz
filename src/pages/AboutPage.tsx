@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-import qualidadeIcon from "/icons/qualidade.png";
+import badgeIcon from "/icons/badge.png";
 import transparenciaIcon from "/icons/transparency.png";
 import expertiseIcon from "/icons/experience.png";
 import equipeImg from "/Equipe/Equipe.png";
@@ -81,7 +81,7 @@ const AboutPage = () => {
               {/* Card 1 - Qualidade */}
               <div className="bg-black-900 rounded-xl p-8 border border-black-700 transition-all duration-300 hover:bg-[#262626] flex flex-col h-full">
                 <img
-                  src={qualidadeIcon}
+                  src={badgeIcon}
                   alt="Ícone de Qualidade"
                   className="w-16 h-16 object-contain mx-auto mb-6"
                 />

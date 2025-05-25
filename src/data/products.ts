@@ -31,7 +31,7 @@ import xenicalImg from '/Products/Comprimidos/Xenical.png';
 import sarmsImg from '/Products/Comprimidos/Sarms.png';
 import dnpImg from '/Products/Comprimidos/DNP.png';
 import sibutraproImg from '/Products/Comprimidos/SibutraPro.png';
-import oxandrolonaWomenImg from '/Products/Orais/OxandrolonaWomen.png';
+const oxandrolonaWomenImg = oxandrolonaImg;
 
 
 export const products: Product[] = [

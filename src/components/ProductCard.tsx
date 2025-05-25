@@ -114,12 +114,6 @@ const ProductCard = React.memo(
               }}
               className="flex-grow bg-black-900 hover:bg-black-800 text-highlight-foreground"
             >
-              <img
-                src={cartGif}
-                className="mr-2 h-4 w-4 bg-white rounded"
-                alt="Carrinho"
-                aria-hidden="true"
-              />
               Comprar
             </Button>
             <div className="flex items-center justify-between bg-black-900 rounded-md">

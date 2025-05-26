@@ -34,7 +34,7 @@ interface FormErrors {
 }
 
 const CheckoutPage = () => {
-  const { items, subtotal, clearCart } = useShoppingCart();
+  const { items, subtotal, clearCart, isLoaded } = useShoppingCart();
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState<FormData>({
     fullName: "",
@@ -52,6 +52,22 @@ const CheckoutPage = () => {
   const [errors, setErrors] = useState<FormErrors>({});
   const [isProcessing, setIsProcessing] = useState(false);
   const [isCompleted, setIsCompleted] = useState(false);
+
+  // Wait for the cart to load
+  if (!isLoaded) {
+    return (
+      <div className="flex flex-col min-h-screen">
+        <Header />
+        <main className="flex-1 flex items-center justify-center">
+          <div className="text-center py-16">
+            <div className="w-12 h-12 border-4 border-black-900 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+            <p className="text-black-300">Carregando carrinho...</p>
+          </div>
+        </main>
+        <Footer />
+      </div>
+    );
+  }
 
   // Calculate shipping
   const shipping = subtotal >= 300 ? 0 : 25.9;

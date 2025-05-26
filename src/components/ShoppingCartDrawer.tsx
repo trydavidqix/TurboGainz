@@ -10,17 +10,18 @@ import { useShoppingCart } from "@/context/ShoppingCartContext";
 import { ShoppingCart, Trash, Plus, Minus, X } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const ShoppingCartDrawer = () => {
   const { items, removeItem, updateQuantity, clearCart, itemCount, subtotal } =
     useShoppingCart();
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
 
   const handleCheckout = () => {
     setOpen(false);
     // Navigate to checkout
-    window.location.href = "/checkout";
+    navigate("/checkout");
   };
 
   return (

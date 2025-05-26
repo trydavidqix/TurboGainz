@@ -1,7 +1,23 @@
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Twitter, Mail } from "lucide-react";
+import { useState } from "react";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(event.target.value);
+  };
+
+  const handleSubscribe = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    // Aqui você faria a requisição POST segura para o seu backend com o email
+    console.log("Simulando inscrição com email:", email);
+    // Simular sucesso e limpar o campo
+    setEmail("");
+    alert("Obrigado por se inscrever!"); // Feedback simples para o usuário
+  };
+
   return (
     <footer className="bg-black-950 text-black-50 w-full">
       <div className="container mx-auto px-2 sm:px-4 py-8 sm:py-12">
@@ -148,7 +164,7 @@ const Footer = () => {
 
             <div className="mt-6">
               <h4 className="font-medium mb-2">Receba novidades:</h4>
-              <form className="flex">
+              <form className="flex" onSubmit={handleSubscribe}>
                 <label htmlFor="newsletter-email" className="sr-only">
                   Seu email para receber novidades
                 </label>
@@ -158,6 +174,8 @@ const Footer = () => {
                   id="newsletter-email"
                   required
                   placeholder="Seu email"
+                  value={email}
+                  onChange={handleInputChange}
                   className="px-2 sm:px-3 py-2 bg-black-800 text-black-50 border-0 rounded-l-md focus:outline-none focus:ring-1 focus:ring-black-500 flex-1 w-full sm:w-auto"
                 />
                 <button

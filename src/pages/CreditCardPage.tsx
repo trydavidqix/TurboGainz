@@ -1,14 +1,16 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useState } from "react";
 import { CircleAlert } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import { useNavigate } from "react-router-dom";
 
 const CreditCardPage = () => {
+  const navigate = useNavigate();
   const [errorMessages, setErrorMessages] = useState<string[]>([]);
 
   // Função para simular a exibição de erros
@@ -151,9 +153,7 @@ const CreditCardPage = () => {
             <div className="mt-2">
               <button
                 className="w-full bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
-                onClick={() =>
-                  (window.location.href = "/manage-account/payment-methods")
-                }
+                onClick={() => navigate("/manage-account/payment-methods")}
               >
                 Cancelar
               </button>

@@ -698,7 +698,7 @@ const CheckoutPage = () => {
                     >
                       <div className="bg-black-800 w-16 h-16 rounded-md flex-shrink-0">
                         <img
-                          src={item.product.image}
+                          src={import.meta.env.BASE_URL + item.product.image}
                           alt={item.product.name}
                           className="w-full h-full object-contain"
                         />

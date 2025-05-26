@@ -75,9 +75,9 @@ const ShoppingCartDrawer = () => {
                   style={{ textDecoration: "none" }}
                 >
                   <div className="flex items-start gap-4">
-                    <div className="bg-black-800 w-20 h-20 rounded-md flex-shrink-0 p-2">
+                    <div className="bg-black-800 w-32 h-32 rounded-md flex-shrink-0 p-2">
                       <img
-                        src={item.product.image}
+                        src={import.meta.env.BASE_URL + item.product.image}
                         alt={`Imagem de ${item.product.name}`}
                         className="w-full h-full object-contain"
                       />
